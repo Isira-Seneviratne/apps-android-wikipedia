@@ -12,6 +12,7 @@
 * Fumi37s
 * GAMEZONE628
 * Great ones
+* Gurio318
 * Hideki Yoshida
 * Hzy980512
 * Jaw Salvager
@@ -1022,7 +1023,7 @@
   <string name="suggested_edits_image_preview_dialog_file_page_link_text">ウィキメディア コモンズのファイルページ</string>
   <string name="suggested_edits_image_preview_dialog_file_page_wikipedia_link_text">ウィキペディアのファイルページ</string>
   <string name="suggested_edits_article_cta_image_tags">画像タグを追加</string>
-  <string name="suggested_edits_article_cta_image_caption" fuzzy="true">画像キャプションを追加</string>
+  <string name="suggested_edits_article_cta_image_caption">画像キャプションを追加</string>
   <string name="suggested_edits_article_cta_image_caption_in_language">画像キャプションを追加 (%s)</string>
   <string name="suggested_edits_article_cta_snackbar_action">表示</string>
   <string name="suggested_edits_feed_card_add_image_caption">画像キャプションを追加</string>
@@ -1188,6 +1189,7 @@
   <string name="activity_tab_donation_unknown">不明</string>
   <string name="activity_tab_donation_last_donation">アプリでの&lt;b&gt;最近の寄付&lt;/b&gt;</string>
   <string name="activity_tab_total_edits_all_projects">全プロジェクトの総編集数</string>
+  <string name="activity_tab_play_wiki_games">WikiGamesをプレイ</string>
   <string name="activity_tab_menu_feedback">機能の問題</string>
   <string name="activity_tab_menu_info">詳細</string>
   <string name="activity_tab_menu_customize">カスタマイズ</string>
@@ -1765,8 +1767,7 @@
   <string name="on_this_day_game_entry_dialog_subtitle">ウィキペディアゲーム</string>
   <string name="on_this_day_game_dialog_button">再生</string>
   <string name="on_this_day_game_submit">送信</string>
-  <string name="on_this_day_game_share_button">共有</string>
-  <string name="on_this_day_game_pause_positive">わかりました</string>
+  <string name="on_this_day_game_share_button" fuzzy="true">共有</string>
   <string name="on_this_day_game_menu_info">詳細</string>
   <string name="on_this_day_game_menu_feedback">機能の問題</string>
   <string name="on_this_day_game_article_read_button">記事を読む</string>
@@ -1814,6 +1815,7 @@
   <string name="year_in_review_slide_app_icon_donor_and_editor">寄付者かつ編集者</string>
   <string name="year_in_review_login_dialog_positive">ログイン / ウィキペディアに参加する</string>
   <string name="year_in_review_login_dialog_negative">ログインしないで続ける</string>
+  <string name="year_in_review_slide_most_read_english_articles_headline">英語ウィキペディアの最も読まれている記事</string>
   <plurals name="year_in_review_slide_bytes_added_headline">
     <item quantity="other">%,dバイト追加</item>
   </plurals>
@@ -1969,4 +1971,6 @@
   <string name="donation_reminders_settings_report_email_subject">寄付リマインダーの問題を報告</string>
   <string name="donation_reminders_settings_report_email_body">寄付リマインダー機能で問題に出くわしました:\n- [具体的な問題の説明]\n- [スクリーンショットまたはリンク]\n\n期待する挙動:\n- [提案する解決策の説明]</string>
   <string name="donation_reminders_snackbar_modify_button_label">変更</string>
+  <string name="hybrid_search_onboarding_learn_more">詳細</string>
+  <string name="hybrid_search_no_results_header">結果なし</string>
 </resources>

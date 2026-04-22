@@ -93,12 +93,12 @@ class OnThisDayGamePlayFragment : Fragment() {
             binding.nextQuestionText.isVisible = false
             if (selectedCardView != null) {
                 val event = (selectedCardView!!.tag as OnThisDay.Event)
-                resetCardBorders()
-                selectedCardView = null
                 viewModel.submitCurrentResponse(event.year)
+                selectedCardView = null
             } else {
                 viewModel.submitCurrentResponse(0)
                 binding.nextQuestionText.isVisible = false
+                resetCardBorders()
             }
         }
 
@@ -329,7 +329,6 @@ class OnThisDayGamePlayFragment : Fragment() {
             ?.add(R.id.fragmentContainer, OnThisDayGameResultFragment.newInstance(viewModel.invokeSource), null)
             ?.commit()
         mainActivity?.setResult(RESULT_OK, Intent().putExtra(OnThisDayGameResultFragment.EXTRA_GAME_COMPLETED, true))
-
         playSound("sound_logo")
     }
 
@@ -360,7 +359,6 @@ class OnThisDayGamePlayFragment : Fragment() {
         val event1 = gameState.currentQuestionState.event1
         val event2 = gameState.currentQuestionState.event2
 
-        resetCardBorders()
         binding.questionCard1.tag = event1
         binding.questionCard2.tag = event2
 
@@ -429,11 +427,8 @@ class OnThisDayGamePlayFragment : Fragment() {
     }
 
     private fun resetCardBorders() {
-        val otherCardView = if (selectedCardView == binding.questionCard1) binding.questionCard2 else binding.questionCard1
-        binding.questionCard1.setStrokeColor(otherCardView.strokeColorStateList)
-        binding.questionCard1.strokeWidth = otherCardView.strokeWidth
-        binding.questionCard2.setStrokeColor(otherCardView.strokeColorStateList)
-        binding.questionCard2.strokeWidth = otherCardView.strokeWidth
+        binding.questionCard1.setDefaultBorder()
+        binding.questionCard2.setDefaultBorder()
     }
 
     fun playSound(soundName: String) {

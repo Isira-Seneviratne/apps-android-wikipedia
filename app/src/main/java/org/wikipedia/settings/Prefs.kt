@@ -233,6 +233,10 @@ object Prefs {
         get() = PrefsIoUtil.getBoolean(R.string.preference_key_login_force_email_auth, false)
         set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_login_force_email_auth, value)
 
+    var lastBackgroundLoginDateTime
+        get() = PrefsIoUtil.getString(R.string.preference_key_last_background_login_date_time, "")
+        set(value) = PrefsIoUtil.setString(R.string.preference_key_last_background_login_date_time, value)
+
     val isMemoryLeakTestEnabled
         get() = PrefsIoUtil.getBoolean(R.string.preference_key_memory_leak_test, false)
 
@@ -471,10 +475,6 @@ object Prefs {
     var isPushNotificationTokenSubscribed
         get() = PrefsIoUtil.getBoolean(R.string.preference_key_push_notification_token_subscribed, false)
         set(subscribed) = PrefsIoUtil.setBoolean(R.string.preference_key_push_notification_token_subscribed, subscribed)
-
-    var isPushNotificationOptionsSet
-        get() = PrefsIoUtil.getBoolean(R.string.preference_key_push_notification_options_set, false)
-        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_push_notification_options_set, value)
 
     val isSuggestedEditsReactivationTestEnabled
         get() = PrefsIoUtil.getBoolean(R.string.preference_key_suggested_edits_reactivation_test, false)
@@ -752,6 +752,10 @@ object Prefs {
         get() = PrefsIoUtil.getString(R.string.preference_key_otd_game_history, null).orEmpty()
         set(value) = PrefsIoUtil.setString(R.string.preference_key_otd_game_history, value)
 
+    var otdLastPlayedDate
+        get() = PrefsIoUtil.getString(R.string.preference_key_otd_last_played_date, null).orEmpty()
+        set(value) = PrefsIoUtil.setString(R.string.preference_key_otd_last_played_date, value)
+
     var otdGameQuestionsPerDay
         get() = PrefsIoUtil.getInt(R.string.preference_key_otd_game_num_questions, 5)
         set(value) = PrefsIoUtil.setInt(R.string.preference_key_otd_game_num_questions, value)
@@ -865,11 +869,15 @@ object Prefs {
         get() = PrefsIoUtil.getString(R.string.preference_key_selected_app_icon, LauncherIcon.DEFAULT.key)
         set(value) = PrefsIoUtil.setString(R.string.preference_key_selected_app_icon, value)
 
-    var yearInReviewReadingListVisitCount
-        get() = PrefsIoUtil.getInt(R.string.preference_key_yir_reading_list_visit_count, 0)
-        set(value) = PrefsIoUtil.setInt(R.string.preference_key_yir_reading_list_visit_count, value)
+    var isHybridSearchOnboardingShown
+        get() = PrefsIoUtil.getBoolean(R.string.preference_key_hybrid_search_onboarding_shown, false)
+        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_hybrid_search_onboarding_shown, value)
 
-    var yearInReviewReadingListSurveyShown
-        get() = PrefsIoUtil.getBoolean(R.string.preference_key_yir_reading_list_survey_shown, false)
-        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_yir_reading_list_survey_shown, value)
+    var isHybridSearchEnabled
+        get() = PrefsIoUtil.getBoolean(R.string.preference_key_hybrid_search_enabled, false)
+        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_hybrid_search_enabled, value)
+
+    var isGameStatsUnavailableSnackbarShown
+        get() = PrefsIoUtil.getBoolean(R.string.preference_key_game_stats_snackbar_shown, false)
+        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_game_stats_snackbar_shown, value)
 }

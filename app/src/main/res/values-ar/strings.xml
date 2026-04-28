@@ -54,6 +54,7 @@
 * بدر
 * جودت
 * ديفيد
+* زيزو كي كي عبدالعزيز سعيد
 * عبد الإله صديقي
 * علاء
 * محمد أحمد عبد الفتاح
@@ -305,6 +306,7 @@
   <string name="about_description">حول تطبيق ويكيبيديا</string>
   <string name="privacy_policy_description">سياسة الخصوصية</string>
   <string name="terms_of_use_description">شروط الاستخدام</string>
+  <string name="legal_safety_contacts_description">جهات الاتصال القانونية والأمنية</string>
   <string name="about_wikipedia_url">https://ar.wikipedia.org/wiki/ويكيبيديا:عن</string>
   <string name="privacy_policy_url">https://foundation.wikimedia.org/wiki/Special:MyLanguage/Privacy_policy/ar</string>
   <string name="terms_of_use_url">https://foundation.wikimedia.org/wiki/Special:MyLanguage/Terms_of_Use/ar</string>
@@ -443,7 +445,7 @@
   <string name="error_unknown">حدث خطأ غير معروف.</string>
   <string name="format_error_server_message">الرسالة: \"%s\"</string>
   <string name="address_copied">نُسخ المسار إلى الحافظة.</string>
-  <string name="text_copied">تم نسخ النص  إلى الحافظة.</string>
+  <string name="text_copied">نُسخ النص  إلى الحافظة.</string>
   <string name="button_continue_to_article">اقرأ المقالة</string>
   <string name="button_continue_to_talk_page">اعرض صفحة النقاش</string>
   <string name="button_continue_to_disambiguation">عرض صفحات مشابهة</string>
@@ -1454,6 +1456,7 @@
   <string name="activity_tab_onboarding_stay_in_control_message">اختر الوحدات التي ترغب في عرضها. جميع بياناتك الشخصية تبقى سرية على جهازك، ويمكنك مسح سجل التصفح في أي وقت.</string>
   <string name="edits_screen_what_is_title">التحرير في تطبيق ويكيبيديا</string>
   <string name="edits_screen_what_is_body">لست متأكدًا من أين تبدأ بالتعديل؟ جرّب ميزة \"التعديلات المقترحة\"، وهي ميزة تتيح لك تقديم مساهمات صغيرة لكنها جوهرية في ويكيبيديا. أو انتقل مباشرةً إلى مقالة تهمك وأجرِ تعديلًا باستخدام ويكي تيكست.</string>
+  <string name="activity_tab_snackbar_label">إحصاءات الألعاب تظهر لغتك الأساسية.</string>
   <string name="file_page_activity_title">صفحة ملف</string>
   <string name="file_page_add_image_caption_button">إضافة تعليق الصورة</string>
   <string name="file_page_add_image_tags_button">أضف وسوم الصور</string>
@@ -1483,6 +1486,7 @@
   <string name="onboarding_multilingual_secondary_text">لقد وجدنا ما يلي على جهازك:</string>
   <string name="onboarding_multilingual_add_language_text">أضف أو عدل اللغات</string>
   <string name="onboarding_welcome_title_v2">الموسوعة الحرة \n…بأكثر من 300 لغة</string>
+  <string name="onboarding_next">التالي</string>
   <string name="app_shortcuts_random">عشوائي</string>
   <string name="app_shortcuts_continue_reading">مواصلة القراءة</string>
   <string name="app_shortcuts_search">بحث</string>
@@ -1988,7 +1992,7 @@
   <string name="email_report_patroller_tasks_subject">تقرير المشكلة - تعديل ميزة الدورية</string>
   <string name="email_report_patroller_tasks_body">لقد واجهت مشكلة مع ميزة تحرير الدورية:\n- [وصف المشكلة المحددة]\n\nالسلوك الذي أرغب في رؤيته هو:\n- [وصف الحل المقترح]\n\n[لقطات الشاشة أو الروابط]</string>
   <string name="donation_campaign_maybe_later_snackbar">سنذكركم مرة أخرى غدا.</string>
-  <string name="donation_campaign_donated_snackbar">شكرًا لك أيها المتبرع العزيز! كرمك يساعد في استمرار ازدهار ويكيبيديا والمواقع الشقيقة لها.</string>
+  <string name="donation_campaign_donated_snackbar">شكراً لك أيها المتبرع العزيز! كرمك يُسهم في ازدهار ويكيبيديا وغيرها من مشاريع المعرفة المجانية.</string>
   <string name="donation_campaign_go_back_button">رجوع</string>
   <string name="menu_single_webview_open_external">افتح في متصفح النظام</string>
   <string name="donate_gpay_dialog_title">التبرع باستخدام Google Pay؟</string>
@@ -2007,7 +2011,8 @@
   <string name="donate_gpay_help_other_ways">طرق أخرى للعطاء</string>
   <string name="donate_gpay_help_faq">الأسئلة الأكثر تكرارا</string>
   <string name="donate_gpay_help_tax">معلومات حول إمكانية خصم الضرائب</string>
-  <string name="donation_history_deleted_message_snackbar">تم حذف تاريخ المتبرع</string>
+  <string name="donation_history_deleted_message_snackbar">تم مسح سجل التبرعات.</string>
+  <string name="donation_history_no_history_message_snackbar">ليس لديك سجل تبرعات لمسحه.</string>
   <string name="places_title">أماكن</string>
   <string name="places_permissions_denied">يلزم الحصول على إذن تحديد الموقع الجغرافي لرؤية موقعك على الخريطة. يُرجى المحاولة مرة أخرى.</string>
   <string name="places_search_hint">ابحث عن أماكن</string>
@@ -2037,10 +2042,15 @@
   <string name="survey_dialog_general_maybe">ربما</string>
   <string name="survey_dialog_input_hint">ملاحظات إضافية</string>
   <string name="survey_dialog_submitted_snackbar">تم إرسال التعليقات. شكرا لك!</string>
+  <string name="games_hub_activity_title">ألعاب</string>
+  <string name="games_hub_activity_games_unavailable_message">لا توجد ألعاب متاحة بهذه اللغة حتى الآن! اللعب يستخدم محتوى تم إنشاؤه من قبل المحررين المتطوعين لويكيبيديا كل لغة.</string>
+  <string name="games_hub_activity_games_unavailable_message_learn_more_action">معرفة المزيد</string>
+  <string name="games_hub_activity_overflow_view_game_stats">عرض إحصائيات اللعبة</string>
+  <string name="games_hub_activity_overflow_learn_more">معرفة المزيد</string>
   <string name="on_this_day_game_entry_dialog_title">مقدمة</string>
   <string name="on_this_day_game_entry_dialog_subtitle">ألعاب ويكيبيديا</string>
-  <string name="on_this_day_game_entry_dialog_button">العب لعبة اليوم</string>
-  <string name="on_this_day_game_entry_dialog_snackbar_message">ألعاب ويكيبيديا موجوجة على موجز الاستكشاف.</string>
+  <string name="on_this_day_game_entry_dialog_button">يلعب</string>
+  <string name="on_this_day_game_entry_dialog_snackbar_message">تتوفر ألعاب ويكيبيديا في مركز الألعاب، الموجود في قائمة المزيد.</string>
   <string name="on_this_day_game_title">أيهما جاء أولا؟</string>
   <string name="on_this_day_game_dialog_button">العب</string>
   <string name="on_this_day_game_splash_message">خمّن أيّ حدث جاء أولاً في هذا اليوم في التاريخ</string>
@@ -2052,14 +2062,9 @@
   <string name="on_this_day_game_point">+1 نقطة</string>
   <string name="on_this_day_game_next">السؤال التالي</string>
   <string name="on_this_day_game_finish">النتائج النهائية</string>
-  <string name="on_this_day_game_share_button">شارك</string>
-  <string name="on_this_day_game_pause_title">إيقاف اللعبة مؤقتًا؟</string>
-  <string name="on_this_day_game_pause_body">سيتم حفظ تقدمك لهذا اليوم. يمكنك العثور على اللعبة في موجز Explore الخاص بك.</string>
-  <string name="on_this_day_game_pause_negative">استمر باللعب</string>
-  <string name="on_this_day_game_pause_positive">فهمتها</string>
+  <string name="on_this_day_game_share_button">شارك النتيجة</string>
   <string name="on_this_day_game_feed_entry_card_heading">العاب ويكيبيديا</string>
   <string name="on_this_day_game_feed_entry_card_title">أيهما جاء أولا؟</string>
-  <string name="on_this_day_game_feed_entry_card_subtitle">خمن ما هو الحدث الذي حدث أولاً في هذا اليوم في التاريخ؟</string>
   <string name="on_this_day_game_result">لقد حصلت على %1$d/%2$d.</string>
   <string name="on_this_day_game_next_in">المباراة القادمة في %s</string>
   <string name="on_this_day_game_your_stats">إحصائياتك</string>
@@ -2106,9 +2111,21 @@
   <string name="on_this_day_game_archive_btn_text">تشغيل الأرشيف</string>
   <string name="on_this_day_game_review_results_btn_text">نتائج المراجعة</string>
   <string name="on_this_day_game_score_message">لقد أحرزت %1$d/%2$d في مباراة اليوم.</string>
+  <string name="on_this_day_game_play_today_btn_text">لعب لعبة اليوم</string>
   <string name="on_this_day_game_continue_playing_btn_text">استمر باللعب</string>
   <string name="on_this_day_game_sound_on">تشغيل الصوت</string>
   <string name="on_this_day_game_sound_off">إيقاف الصوت</string>
+  <string name="on_this_day_game_more_label">المزيد</string>
+  <string name="on_this_day_game_card_progress_label">أنت على سؤال %d. استمر في تخمين أي حدث جاء أولاً في هذا اليوم في التاريخ</string>
+  <string name="on_this_day_game_card_progress_short_label">أنت على سؤال %d.</string>
+  <string name="on_this_day_game_explore_feed_card_score_message">لقد حققت %1$d/%2$d في مباراة اليوم اللعبة التالية في %3$s</string>
+  <string name="on_this_day_game_explore_feed_card_score_short_message">لقد حققت %1$d/%2$d في مباراة اليوم</string>
+  <string name="on_this_day_game_card_archive_label">أرشيف</string>
+  <string name="on_this_day_game_stats_log_in_prompt_card_button">تسجيل الدخول</string>
+  <string name="on_this_day_game_stats_log_in_prompt_card_title">قم بالدخول لمشاهدة إحصاءات اللعبة</string>
+  <string name="on_this_day_game_stats_log_in_prompt_card_description">اطلع على سلسلة انتصاراتك ونتائجك والمزيد</string>
+  <string name="wikipedia_games_title">ألعاب ويكيبيديا</string>
+  <string name="wikipedia_games_subtitle">ألعاب معلومات عامة يومية تعتمد على محتوى ويكيبيديا.</string>
   <string name="year_in_review_learn_more">يتعلم أكثر</string>
   <string name="year_in_review_get_started">البدء</string>
   <string name="year_in_review_topbar_w_icon">أيقونة ويكيبيديا W</string>
@@ -2151,7 +2168,7 @@
   <string name="year_in_review_slide_app_icon_title_unlocked">فتحت أيقونة التطبيق الجديدة على الشاشة الرئيسية</string>
   <string name="year_in_review_slide_app_icon_title_unlock">احصل على مكافأة المساهم الخاصة بك للعام القادم!</string>
   <string name="year_in_review_slide_app_icon_body_unlocked">فعّل أيقونة تطبيقك الجديدة في الإعدادات ضمن أيقونة التطبيق. شكرًا لاستثمارك في مستقبل المعرفة المجانية. مساهماتك، كـ %1$s من %2$d ، تُمهّد الطريق لعالم من المعلومات المجانية، ونتيجةً لذلك، حصلت على أيقونة مُخصّصة للمساهمين في ويكيبيديا على شاشتك الرئيسية.</string>
-  <string name="year_in_review_slide_app_icon_body_unlock">نحن سعداء أن ويكيبيديا كانت جزءا من %1$d الخاص بك! افتح مكافأة خاصة في عامك في %2$d في المراجعة عن طريق أن تصبح مساهمة - سواء عن طريق &lt;a href=\"%3$s\"&gt;تحرير ويكيبيديا&lt;/a&gt; أو عن طريق التبرع إلى &lt;a href=\"%4$s\"&gt;مؤسسة ويكيميديا&lt;/a&gt; ، وهي منظمة غير ربحية وراء ذلك. إذا كانت ويكيبيديا مفيدة لك، يرجى النظر في التبرع للمساعدة في الحفاظ على مستقبلها والحفاظ على مجاناً، خالياً من الإعلانات، وموثوق بها، ويمكن الوصول إليها للجميع.</string>
+  <string name="year_in_review_slide_app_icon_body_unlock">نحن سعداء أن ويكيبيديا كانت جزءا من %1$d الخاص بك! قم بتحويل مكافأة خاصة في عامك في %2$d في المراجعة من خلال أن تصبح مساهمة - سواء من خلال &lt;a href=\"%3$s\"&gt;تحرير ويكيبيديا&lt;/a&gt; أو عن طريق التبرع من التطبيق إلى &lt;a href=\"%4$s\"&gt;مؤسسة ويكيميديا&lt;/a&gt; ، وهي منظمة غير ربحية وراءها. إذا كانت ويكيبيديا مفيدة لك، يرجى النظر في التبرع للمساعدة في الحفاظ على مستقبلها والحفاظ على مجاناً، خالياً من الإعلانات، وموثوق بها، ويمكن الوصول إليها للجميع. إذا كنت قدمتِ التبرع في مكان آخر، فإن دعمك يقدّر بشدة.</string>
   <string name="year_in_review_slide_app_icon_donor">متبرع</string>
   <string name="year_in_review_slide_app_icon_editor">محرر</string>
   <string name="year_in_review_slide_app_icon_donor_and_editor">متبرع ومحرر</string>
@@ -2206,12 +2223,12 @@
     <item quantity="other"> أضيف %,d بايت</item>
   </plurals>
   <plurals name="year_in_review_slide_edited_times_headline">
-    <item quantity="zero">لم تعدّل ويكيبيديا ولا مرة</item>
-    <item quantity="one">عدّلت ويكيبيديا مرة واحدة</item>
-    <item quantity="two">عدّلت ويكيبيديا مرتين</item>
-    <item quantity="few">عدّلت ويكيبيديا %s مرات</item>
-    <item quantity="many">عدّلت ويكيبيديا %s مرة</item>
-    <item quantity="other"> عدّلت ويكيبيديا %s مرة</item>
+    <item quantity="zero">لم تعدّل ولا مرة</item>
+    <item quantity="one">عدّلت مرة واحدة</item>
+    <item quantity="two">عدّلت مرتين</item>
+    <item quantity="few">عدّلت %s مرات</item>
+    <item quantity="many">عدّلت %s مرة</item>
+    <item quantity="other"> عدّلت %s مرة</item>
   </plurals>
   <plurals name="year_in_review_slide_app_edited_times_headline">
     <item quantity="zero">لم يجرِ المحررون على تطبيقات ويكيبيديا الرسمية ولا تعديل</item>
@@ -2392,16 +2409,12 @@
   <string name="recommended_reading_list_notification_subtitle">انقر هنا لرؤية أحدث توصياتك.</string>
   <string name="recommended_reading_list_settings_notification_subtitle_enable">عندما يتم تحديث Discover الخاص بك، سوف ترسل لك Wikipedia إشعارًا.</string>
   <string name="recommended_reading_list_settings_toggle_enable_message">اكتشف الآن. ستقترح عليك ويكيبيديا مقالات للقراءة.</string>
-  <string name="donation_reminders_initial_prompt_label">تجربة</string>
-  <string name="donation_reminders_initial_prompt_title">ادعم ويكيبيديا أثناء قراءتك</string>
-  <string name="donation_reminders_initial_prompt_message">قم بإعداد تذكير بالتبرعات استنادًا إلى عدد المقالات التي تقرأها للمساعدة في إبقاء ويكيبيديا خالية من الإعلانات ومحدثة ومتاحة للجميع.</string>
-  <string name="donation_reminders_initial_prompt_positive_button">البدء</string>
-  <string name="donation_reminders_initial_prompt_negative_button">ليس الآن</string>
   <string name="donation_reminders_prompt_dismiss_snackbar">يمكن تعديل تذكيرات التبرع في أي وقت من خلال الإعدادات.</string>
   <string name="donation_settings_section_header">التبرعات</string>
-  <string name="donation_reminders_settings_title">تذكيرات التبرع</string>
-  <string name="donation_reminders_settings_thank_you_message">انضم إلى ٢٪ من القراء الذين يبذلون قصارى جهدهم لإبقاء ويكيبيديا خالية من الإعلانات، ومُحدَّثة، ومتاحة للجميع. فعِّل تذكيرك بالتبرعات الآن.</string>
-  <string name="donation_reminders_settings_donation_info">تذهب التبرعات إلى مؤسسة ويكيميديا والمؤسسات التابعة لها، المضيفين الفخورين لموقع ويكيبيديا ومواقعها الشقيقة.</string>
+  <string name="donation_reminders_settings_title">كيف نذكرك؟</string>
+  <string name="donation_reminders_settings_option_title">تذكيرات التبرع</string>
+  <string name="donation_reminders_settings_thank_you_message">كرمكم يُسهم في ازدهار ويكيبيديا. أنشئوا تذكيرًا بالتبرعات بناءً على عدد المقالات التي تقرأونها.</string>
+  <string name="donation_reminders_settings_donation_info">تذهب التبرعات إلى مؤسسة ويكيميديا والشركات التابعة لها، المضيفين الفخورين لويكيبيديا ومشاريع المعرفة المجانية الأخرى.</string>
   <string name="donation_reminders_settings_article_frequency_label">عندما أقرأ</string>
   <string name="donation_reminders_settings_amount_label">ذكّرني بالتبرع</string>
   <string name="donation_reminders_settings_confirm_btn_label">تأكيد التذكير</string>
@@ -2412,13 +2425,12 @@
   <string name="donation_reminders_settings_option_custom">مُخصَّص…</string>
   <string name="donation_reminders_snacbkbar_confirmation_label">شكرًا لك! سنذكرك بالتبرع %1$s عند قراءة %2$s أثناء إجراء هذه التجربة.</string>
   <string name="donation_reminders_first_milestone_reached_prompt_title">لقد قرأت %1$s منذ أن تعهدت بـ %2$s</string>
-  <string name="donation_reminders_prompt_message">في %1$s ، طلبتَ منا تذكيرك بالتبرع بعد قراءة %2$s . إذا زودتك ويكيبيديا بـ %3$s من المعرفة، فنرجو منك الانضمام إلى الـ 2%% من القراء المتبرعين وإتمام تبرعك اليوم.</string>
+  <string name="donation_reminders_subsequent_milestone_reached_prompt_title">لقد قرأت %1$s آخر</string>
+  <string name="donation_reminders_prompt_message">لقد فعّلتَ تذكيرًا بالتبرعات على %1$s للتبرع %3$s كل %2$s تقرأها. هل أنت مستعدٌّ للوفاء بتعهدك بدعم ويكيبيديا؟</string>
   <string name="donation_reminders_prompt_positive_button">تبرع الآن</string>
   <string name="donation_reminders_prompt_negative_button">ليس الآن</string>
   <string name="donation_reminders_gpay_text">تبرع بـ %s باستخدام Google Pay</string>
   <string name="donation_reminders_gpay_different_amount_text">التبرع بمبلغ مختلف باستخدام Google Pay</string>
-  <string name="donation_reminders_survey_dialog_title">ساعد في تحسين تذكيرات التبرع.</string>
-  <string name="donation_reminders_survey_dialog_message">هل أنت راض عن هذه التجربة؟</string>
   <string name="donation_reminders_settings_description_on">تذكيرات التبرع مُفعّلة. ستُذكّرك ويكيبيديا بالتبرع %1$s كل %2$s تقرأها أثناء هذه التجربة.</string>
   <string name="donation_reminders_settings_description_off">تم إيقاف تذكير التبرعات.</string>
   <string name="donation_reminders_settings_tooltip_info_label">يتم تخزين عدد المقالات محليًا على جهازك</string>
@@ -2430,4 +2442,97 @@
     <item quantity="many">مقالات كثيرة</item>
     <item quantity="other">%d مقالات</item>
   </plurals>
+  <string name="donation_reminders_settings_no_thanks_btn_label">ًلا شكرا</string>
+  <string name="donation_reminders_experiment_label">تجربة</string>
+  <string name="donation_reminders_settings_learn_more_button">معرفة المزيد</string>
+  <string name="donation_reminders_settings_report_button">مشكلة مع الميزة</string>
+  <string name="donation_reminders_settings_report_email_subject">تقرير المشكلة - تذكيرات التبرع</string>
+  <string name="donation_reminders_settings_report_email_body">لقد واجهت مشكلة مع ميزة تذكير التبرعات:\n- [وصف المشكلة المحددة]\n- [لقطات الشاشة أو الروابط]\n\nالسلوك الذي أرغب في رؤيته هو:\n- [وصف الحل المقترح]</string>
+  <string name="donation_reminders_snackbar_modify_button_label">عدل</string>
+  <string name="hybrid_search_search_hint">ابحث أو اسأل أي شيء</string>
+  <string name="hybrid_search_article_search_hint">اسأل عن %s</string>
+  <string name="hybrid_search_suggestion_title">البحث عن:</string>
+  <string name="hybrid_search_onboarding_learn_more">تعلم المزيد</string>
+  <string name="hybrid_search_onboarding_search_title">اطرح الأسئلة، واحصل على الإجابات</string>
+  <string name="hybrid_search_onboarding_search_description">هذه الميزة التجريبية تفهم اللغة الطبيعية. بدلاً من البحث عن كلمات رئيسية، وصف ما تريد معرفته.</string>
+  <string name="hybrid_search_onboarding_opt_in_choice_title">ميزة بيتا</string>
+  <string name="hybrid_search_onboarding_opt_in_choice_description">متاح لفترة محدودة خلال هذه التجربة</string>
+  <string name="hybrid_search_beta_tag">بيتا</string>
+  <string name="hybrid_search_experimental_feature_switch_label">انضم إلى التجربة</string>
+  <string name="hybrid_search_onboarding_search_example_title">هل تحتاج إلى إلهام؟</string>
+  <string name="hybrid_search_onboarding_search_example_description">استخدم أحد أمثلة البحث أدناه.</string>
+  <string name="hybrid_search_onboarding_opt_out_toast_message">لقد اخترت الخروج من التجربة</string>
+  <string name="hybrid_search_onboarding_search_example_query_pluto_as_planet">متى لم يتم إدراج بلوتو ككوكب؟</string>
+  <string name="hybrid_search_onboarding_search_example_query_first_olympics">أول دورة أولمبية</string>
+  <string name="hybrid_search_onboarding_search_example_query_rna_vs_dna">RNA vs DNA</string>
+  <string name="hybrid_search_onboarding_search_example_query_pineapple_pizza">لماذا يضع الناس النناناس على البيتزا؟</string>
+  <string name="hybrid_search_onboarding_search_example_query_biggest_cities_europe">ما هي أكبر المدن في أوروبا؟</string>
+  <string name="hybrid_search_onboarding_screen_title">طريقة جديدة للبحث</string>
+  <string name="hybrid_search_results_header_description">مصدر من مقالات ويكيبيديا مكتوبة من قبل الإنسان</string>
+  <string name="hybrid_search_results_rate_label">قيّم هذه النتيجة</string>
+  <string name="hybrid_search_results_rated_label">قيِّم</string>
+  <string name="hybrid_search_results_rate_thumb_up">أعطِ إعجابًا</string>
+  <string name="hybrid_search_results_rate_thumb_down">أعطِ تقييمًا سلبيًا</string>
+  <string name="hybrid_lexical_search_results_empty">لا يوجد عنوان للمقال يطابق هذا السؤال</string>
+  <string name="hybrid_search_results_empty">البحث المُحسّن غير متوفر مؤقتاً</string>
+  <string name="hybrid_search_no_results_header">لا نتائج</string>
+  <string name="hybrid_search_no_results_description">هذا الموضوع لا يعيد مقتطفات المقال في هذه اللحظة. إليك بعض الأشياء التي يمكنك تجربتها:</string>
+  <string name="hybrid_search_no_results_suggestion_rephrase_text">إعادة تعبير بحثك</string>
+  <string name="hybrid_search_no_results_suggestion_try_related_topic">حاولي موضوعاً مرتبطاً</string>
+  <string name="hybrid_search_error_message">شيء ما حدث خطأ رجاءً حاول مرة أخرى لاحقاً</string>
+  <string name="hybrid_search_who_is_prefix">من هو %s؟</string>
+  <string name="hybrid_search_turn_off_experiment_label">أطفئ هذه التجربة</string>
+  <string name="reading_challenge_widget_name">تحدي القراءة</string>
+  <string name="reading_challenge_onboarding_header">احتفل بعيد ميلاد ويكيبيديا الـ25 من خلال الانضمام إلى تحدي القراءة لمدة 25 يوماً!</string>
+  <string name="reading_challenge_onboarding_read_title">اقرأ مقالة واحدة يوميا لمدة 25 يوما</string>
+  <string name="reading_challenge_onboarding_read_description">انضم إلى التحدي في أي وقت بين 1 مايو و 31 مايو، استكمل 25 يوماً في جدول زمني الخاص بك.</string>
+  <string name="reading_challenge_onboarding_win_title">فوز بجوائز</string>
+  <string name="reading_challenge_onboarding_win_description">إكمال سلسلة قراءة لمدة 25 يوماً بينما التحدي هو على الهواء مباشرة للفوز بجوائز خاصة</string>
+  <string name="reading_challenge_onboarding_install_title">قم بتثبيت الوسائط</string>
+  <string name="reading_challenge_onboarding_install_description">احصل على تذكيرات مفيدة وتحفيز مع كلبي عيد ميلادنا الجميل</string>
+  <string name="reading_challenge_onboarding_note">تاريخك في القراءة محمي يتم حساب رؤى القراءة باستخدام البيانات المحفوظة محليا على جهازك.</string>
+  <string name="reading_challenge_onboarding_learn_more_button">تعلم المزيد</string>
+  <string name="reading_challenge_onboarding_join_button">انضموا إلى التحدي</string>
+  <string name="reading_challenge_onboarding_prompt_title">إدخلوا للانضمام إلى التحدي</string>
+  <string name="reading_challenge_onboarding_prompt_message">قم بالدخول أو قم بإنشاء حساب لتتبع تقدمك نحو تحدي القراءة.</string>
+  <string name="reading_challenge_onboarding_prompt_no_thanks">لا شكراً</string>
+  <string name="reading_challenge_onboarding_prompt_login">تسجيل الدخول / الانضمام إلى ويكيبيديا</string>
+  <string name="reading_challenge_install_prompt_title">قم بتثبيت إطار تحدي القراءة لمدة 25 يوماً</string>
+  <string name="reading_challenge_install_prompt_message">(بيبي غلوب) تشجعك إضافة إطار التحديات القراءة لتتبع تقدمك من شاشة الوطن.</string>
+  <string name="reading_challenge_install_prompt_got_it">فهمت</string>
+  <string name="reading_challenge_install_prompt_add">إضافة</string>
+  <string name="reading_challenge_widget_explore_button">استكشاف</string>
+  <string name="reading_challenge_widget_explore_wikipedia_button">استكشاف ويكيبيديا</string>
+  <string name="reading_challenge_widget_join_challenge_button">انضموا إلى التحدي</string>
+  <string name="reading_challenge_widget_join_the_challenge_button">انضموا إلى التحدي</string>
+  <string name="reading_challenge_widget_search_button">البحث</string>
+  <string name="reading_challenge_widget_random_button">عشوائية</string>
+  <string name="reading_challenge_widget_collect_prize_button">جمع الجائزة</string>
+  <string name="reading_challenge_widget_collect_your_prize_button">جمع جائزتك!</string>
+  <string name="reading_challenge_widget_not_live_title">إستعد للقراءة</string>
+  <string name="reading_challenge_widget_not_live_description">تحدي قراءة لمدة 25 يوماً في الطريق</string>
+  <string name="reading_challenge_widget_not_opted_in_title">جاهز، جاهز، قراءة!</string>
+  <string name="reading_challenge_widget_not_opted_in_description">انضموا إلى التحدي لمدة 25 يوماً وفتحوا الجوائز الخاصة</string>
+  <string name="reading_challenge_not_read_today_description">لا تدع اليوم يمر، و أنقذ خطك</string>
+  <string name="reading_challenge_streak_ongoing_title">تحدي القراءة لمدة 25 يوماً</string>
+  <string name="reading_challenge_widget_reminder_dont_let_today_drift">لا تدع اليوم يمر، سلسلة القراءة الخاصة بك تنتظر.</string>
+  <string name="reading_challenge_widget_reminder_before_day_snoozes">قبل أن يضيق اليوم... لا يزال هناك وقت للتعلم شيئاً</string>
+  <string name="reading_challenge_widget_reminder_small_bit_counts">حتى القراءة الصغيرة تعتبر من أجل هدفك</string>
+  <string name="reading_challenge_widget_reminder_one_article_away">خطك يبعد مقالة واحدة فقط</string>
+  <string name="reading_challenge_widget_reminder_jump_in_anytime">قفز إلى بعض القراءة في أي وقت اليوم.</string>
+  <string name="reading_challenge_widget_reminder_quiet_reading_moment">لحظة قراءة هادئة؟</string>
+  <string name="reading_challenge_widget_reminder_keep_curiosity_going">استمر في فضولك</string>
+  <string name="reading_challenge_widget_enrolled_not_started_title">جاهز، جاهز، قراءة!</string>
+  <string name="reading_challenge_widget_enrolled_not_started_subtitle">ابدأ بالعمل نحو سلسلة 25 يوماً</string>
+  <string name="reading_challenge_widget_start_reading_challenge_title">ابدأ تحدي القراءة</string>
+  <string name="reading_challenge_widget_start_reading_challenge_subtitle">كل سلسلة تبدأ في مكان ما</string>
+  <string name="reading_challenge_widget_start_spin_up_new_streak_title">-تسلسل جديد؟</string>
+  <string name="reading_challenge_widget_start_spin_up_new_streak_subtitle">اقرأ مقالة واحدة للبدء</string>
+  <string name="reading_challenge_widget_start_fresh_start_title">بداية جديدة</string>
+  <string name="reading_challenge_widget_start_fresh_start_subtitle">خطك يبعد مقالة واحدة فقط</string>
+  <string name="reading_challenge_widget_concluded_incomplete">انتهت التحدي</string>
+  <string name="reading_challenge_widget_concluded_complete">لقد فعلتها</string>
+  <string name="reading_challenge_widget_reward_title">الفضول يبدو جيدا عليك  ⁇ ️</string>
+  <string name="reading_challenge_widget_reward_body">احتفل بإكمال التحدي مع خصم 15%% في متجر ويكيبيديا.</string>
+  <string name="reading_challenge_widget_reward_button_label">الحصول على خصم 15%% في المتجر</string>
 </resources>

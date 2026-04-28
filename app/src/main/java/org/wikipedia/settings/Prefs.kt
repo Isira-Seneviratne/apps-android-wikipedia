@@ -4,13 +4,13 @@ import android.location.Location
 import okhttp3.Cookie
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import okhttp3.logging.HttpLoggingInterceptor
+import org.wikimedia.testkitchen.config.StreamConfig
 import org.wikipedia.BuildConfig
 import org.wikipedia.R
 import org.wikipedia.WikipediaApp
 import org.wikipedia.activitytab.ActivityTabModules
 import org.wikipedia.analytics.SessionData
 import org.wikipedia.analytics.eventplatform.AppSessionEvent
-import org.wikipedia.analytics.eventplatform.StreamConfig
 import org.wikipedia.dataclient.WikiSite
 import org.wikipedia.donate.DonationResult
 import org.wikipedia.donate.donationreminder.DonationReminderConfig
@@ -29,6 +29,7 @@ import org.wikipedia.util.DateUtil.dbDateParse
 import org.wikipedia.util.ReleaseUtil.isDevRelease
 import org.wikipedia.util.StringUtil
 import org.wikipedia.watchlist.WatchlistFilterTypes
+import org.wikipedia.widgets.readingchallenge.ReadingChallengeWidgetRepository
 import org.wikipedia.yearinreview.YearInReviewModel
 import org.wikipedia.yearinreview.YearInReviewSurveyState
 import java.util.Date
@@ -174,8 +175,9 @@ object Prefs {
     val mediaWikiBaseUriSupportsLangCode
         get() = PrefsIoUtil.getBoolean(R.string.preference_key_mediawiki_base_uri_supports_lang_code, true)
 
-    val eventPlatformIntakeUriOverride
-        get() = PrefsIoUtil.getString(R.string.preference_key_event_platform_intake_base_uri, "")!!
+    var eventPlatformIntakeUriOverride
+        get() = PrefsIoUtil.getString(R.string.preference_key_event_platform_intake_base_uri, "")
+        set(value) = PrefsIoUtil.setString(R.string.preference_key_event_platform_intake_base_uri, value)
 
     fun getLastRunTime(task: String): Long {
         return PrefsIoUtil.getLong(getLastRunTimeKey(task), 0)
@@ -231,6 +233,10 @@ object Prefs {
     var loginForceEmailAuth
         get() = PrefsIoUtil.getBoolean(R.string.preference_key_login_force_email_auth, false)
         set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_login_force_email_auth, value)
+
+    var lastBackgroundLoginDateTime
+        get() = PrefsIoUtil.getString(R.string.preference_key_last_background_login_date_time, "")
+        set(value) = PrefsIoUtil.setString(R.string.preference_key_last_background_login_date_time, value)
 
     val isMemoryLeakTestEnabled
         get() = PrefsIoUtil.getBoolean(R.string.preference_key_memory_leak_test, false)
@@ -470,10 +476,6 @@ object Prefs {
     var isPushNotificationTokenSubscribed
         get() = PrefsIoUtil.getBoolean(R.string.preference_key_push_notification_token_subscribed, false)
         set(subscribed) = PrefsIoUtil.setBoolean(R.string.preference_key_push_notification_token_subscribed, subscribed)
-
-    var isPushNotificationOptionsSet
-        get() = PrefsIoUtil.getBoolean(R.string.preference_key_push_notification_options_set, false)
-        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_push_notification_options_set, value)
 
     val isSuggestedEditsReactivationTestEnabled
         get() = PrefsIoUtil.getBoolean(R.string.preference_key_suggested_edits_reactivation_test, false)
@@ -751,6 +753,10 @@ object Prefs {
         get() = PrefsIoUtil.getString(R.string.preference_key_otd_game_history, null).orEmpty()
         set(value) = PrefsIoUtil.setString(R.string.preference_key_otd_game_history, value)
 
+    var otdLastPlayedDate
+        get() = PrefsIoUtil.getString(R.string.preference_key_otd_last_played_date, null).orEmpty()
+        set(value) = PrefsIoUtil.setString(R.string.preference_key_otd_last_played_date, value)
+
     var otdGameQuestionsPerDay
         get() = PrefsIoUtil.getInt(R.string.preference_key_otd_game_num_questions, 5)
         set(value) = PrefsIoUtil.setInt(R.string.preference_key_otd_game_num_questions, value)
@@ -774,7 +780,7 @@ object Prefs {
         set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_otd_sound_on, value)
 
     var isYearInReviewEnabled: Boolean
-        get() = PrefsIoUtil.getBoolean(R.string.preference_key_year_in_review_is_enabled, false)
+        get() = PrefsIoUtil.getBoolean(R.string.preference_key_year_in_review_is_enabled, true)
         set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_year_in_review_is_enabled, value)
 
     var yearInReviewVisited: Boolean
@@ -864,15 +870,53 @@ object Prefs {
         get() = PrefsIoUtil.getString(R.string.preference_key_selected_app_icon, LauncherIcon.DEFAULT.key)
         set(value) = PrefsIoUtil.setString(R.string.preference_key_selected_app_icon, value)
 
-    var yearInReviewReadingListVisitCount
-        get() = PrefsIoUtil.getInt(R.string.preference_key_yir_reading_list_visit_count, 0)
-        set(value) = PrefsIoUtil.setInt(R.string.preference_key_yir_reading_list_visit_count, value)
+    var isHybridSearchOnboardingShown
+        get() = PrefsIoUtil.getBoolean(R.string.preference_key_hybrid_search_onboarding_shown, false)
+        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_hybrid_search_onboarding_shown, value)
 
-    var yearInReviewReadingListSurveyShown
-        get() = PrefsIoUtil.getBoolean(R.string.preference_key_yir_reading_list_survey_shown, false)
-        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_yir_reading_list_survey_shown, value)
+    var isHybridSearchEnabled
+        get() = PrefsIoUtil.getBoolean(R.string.preference_key_hybrid_search_enabled, false)
+        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_hybrid_search_enabled, value)
 
-    var exploreFeedSurveyShown
-        get() = PrefsIoUtil.getBoolean(R.string.preference_key_explore_feed_survey_shown, false)
-        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_explore_feed_survey_shown, value)
+    var isGameStatsUnavailableSnackbarShown
+        get() = PrefsIoUtil.getBoolean(R.string.preference_key_game_stats_snackbar_shown, false)
+        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_game_stats_snackbar_shown, value)
+
+    var readingChallengeStreak
+        get() = PrefsIoUtil.getInt(R.string.preference_key_reading_challenge_streak, 0)
+        set(value) = PrefsIoUtil.setInt(R.string.preference_key_reading_challenge_streak, value)
+
+    var readingChallengeEnrolled
+        get() = PrefsIoUtil.getBoolean(R.string.preference_key_reading_challenge_enrolled, false)
+        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_reading_challenge_enrolled, value)
+
+    var readingChallengeLastReadDate
+        get() = PrefsIoUtil.getString(R.string.preference_key_reading_challenge_last_read_date, "").orEmpty()
+        set(value) = PrefsIoUtil.setString(R.string.preference_key_reading_challenge_last_read_date, value)
+
+    var readingChallengeOnboardingShown
+        get() = PrefsIoUtil.getBoolean(R.string.preference_key_reading_challenge_onboarding_shown, false)
+        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_reading_challenge_onboarding_shown, value)
+
+    var readingChallengeInstallPromptShown
+        get() = PrefsIoUtil.getBoolean(R.string.preference_key_reading_challenge_install_prompt_shown, false)
+        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_reading_challenge_install_prompt_shown, value)
+
+    var readingChallengeEnrollmentDate
+        get() = PrefsIoUtil.getString(R.string.preference_key_reading_challenge_enrollment_date, "").orEmpty()
+        set(value) = PrefsIoUtil.setString(R.string.preference_key_reading_challenge_enrollment_date, value)
+
+    var readingChallengeEndDate
+        get() = PrefsIoUtil.getString(R.string.preference_key_reading_challenge_end_date,
+            ReadingChallengeWidgetRepository.READING_CHALLENGE_END_DATE).orEmpty()
+        set(value) = PrefsIoUtil.setString(R.string.preference_key_reading_challenge_end_date, value)
+
+    var readingChallengeStartDate
+        get() = PrefsIoUtil.getString(R.string.preference_key_reading_challenge_start_date,
+            ReadingChallengeWidgetRepository.READING_CHALLENGE_START_DATE).orEmpty()
+        set(value) = PrefsIoUtil.setString(R.string.preference_key_reading_challenge_start_date, value)
+
+    var readingChallengeWidgetFastCycle
+        get() = PrefsIoUtil.getBoolean(R.string.preference_key_reading_challenge_widget_fast_cycle, false)
+        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_reading_challenge_widget_fast_cycle, value)
 }

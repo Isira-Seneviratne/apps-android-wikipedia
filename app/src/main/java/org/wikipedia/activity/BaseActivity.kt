@@ -1,7 +1,6 @@
 package org.wikipedia.activity
 
 import android.content.Intent
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.MotionEvent
@@ -10,6 +9,7 @@ import androidx.annotation.ColorInt
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.pm.ShortcutManagerCompat
+import androidx.core.graphics.drawable.toDrawable
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
@@ -17,13 +17,14 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.skydoves.balloon.Balloon
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import org.wikimedia.testkitchen.instrument.InstrumentImpl
 import org.wikipedia.Constants
 import org.wikipedia.R
 import org.wikipedia.WikipediaApp
 import org.wikipedia.analytics.BreadcrumbsContextHelper
 import org.wikipedia.analytics.eventplatform.BreadCrumbLogEvent
 import org.wikipedia.analytics.eventplatform.EventPlatformClient
-import org.wikipedia.analytics.metricsplatform.MetricsPlatform
+import org.wikipedia.analytics.testkitchen.TestKitchenAdapter
 import org.wikipedia.appshortcuts.AppShortcuts
 import org.wikipedia.auth.AccountUtil
 import org.wikipedia.concurrency.FlowEventBus
@@ -39,6 +40,7 @@ import org.wikipedia.games.onthisday.OnThisDayGameResultFragment
 import org.wikipedia.login.LoginActivity
 import org.wikipedia.main.MainActivity
 import org.wikipedia.notifications.NotificationPresenter
+import org.wikipedia.onboarding.InitialOnboardingActivity
 import org.wikipedia.page.ExclusiveBottomSheetPresenter
 import org.wikipedia.readinglist.ReadingListSyncBehaviorDialogs
 import org.wikipedia.readinglist.sync.ReadingListSyncAdapter
@@ -51,6 +53,9 @@ import org.wikipedia.util.DeviceUtil
 import org.wikipedia.util.FeedbackUtil
 import org.wikipedia.util.ResourceUtil
 import org.wikipedia.views.ImageZoomHelper
+import org.wikipedia.widgets.readingchallenge.ReadingChallengeInstallWidgetDialog
+import org.wikipedia.widgets.readingchallenge.ReadingChallengeOnboardingActivity
+import org.wikipedia.widgets.readingchallenge.ReadingChallengeWidgetRepository
 import org.wikipedia.yearinreview.YearInReviewActivity
 import org.wikipedia.yearinreview.YearInReviewOnboardingActivity
 import org.wikipedia.yearinreview.YearInReviewViewModel
@@ -63,6 +68,9 @@ abstract class BaseActivity : AppCompatActivity(), ConnectionStateMonitor.Callba
     private var imageZoomHelper: ImageZoomHelper? = null
     var callback: Callback? = null
 
+    // For subclasses to create instruments that they would like to persist for the lifetime of the activity.
+    protected var _instrument: InstrumentImpl? = null
+
     val requestPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
             callback?.onPermissionResult(this, isGranted)
     }
@@ -71,6 +79,15 @@ abstract class BaseActivity : AppCompatActivity(), ConnectionStateMonitor.Callba
         if (it.resultCode == RESULT_OK) {
             ExclusiveBottomSheetPresenter.dismiss(supportFragmentManager)
             FeedbackUtil.showMessage(this, R.string.donate_gpay_success_message)
+        }
+    }
+
+    private val requestReadingChallengeActivity = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+        if (ReadingChallengeWidgetRepository.shouldShowWidgetInstallDialog()) {
+            ExclusiveBottomSheetPresenter.dismiss(supportFragmentManager)
+            ExclusiveBottomSheetPresenter.show(supportFragmentManager,
+                ReadingChallengeInstallWidgetDialog()
+            )
         }
     }
 
@@ -119,6 +136,7 @@ abstract class BaseActivity : AppCompatActivity(), ConnectionStateMonitor.Callba
         setNavigationBarColor(ResourceUtil.getThemedColor(this, R.attr.paper_color))
         maybeShowLoggedOutInBackgroundDialog()
         maybeShowYearInReview()
+        maybeShowReadingChallengePrompt()
 
         Prefs.localClassName = localClassName
 
@@ -178,14 +196,14 @@ abstract class BaseActivity : AppCompatActivity(), ConnectionStateMonitor.Callba
     override fun onPause() {
         super.onPause()
         WikipediaApp.instance.appSessionEvent.persistSession()
-        MetricsPlatform.client.onAppPause()
+        TestKitchenAdapter.client.onAppPause()
         EventPlatformClient.flushCachedEvents()
     }
 
     override fun onResume() {
         super.onResume()
         WikipediaApp.instance.appSessionEvent.touchSession()
-        MetricsPlatform.client.onAppResume()
+        TestKitchenAdapter.client.onAppResume()
         BreadCrumbLogEvent.logScreenShown(this)
     }
 
@@ -251,6 +269,10 @@ abstract class BaseActivity : AppCompatActivity(), ConnectionStateMonitor.Callba
         requestDonateActivity.launch(intent)
     }
 
+    fun getInstrument(): InstrumentImpl? {
+        return _instrument
+    }
+
     private fun maybeShowYearInReview() {
         if (this !is YearInReviewOnboardingActivity && this !is YearInReviewActivity &&
             !Prefs.isInitialOnboardingEnabled &&
@@ -259,19 +281,37 @@ abstract class BaseActivity : AppCompatActivity(), ConnectionStateMonitor.Callba
         }
     }
 
+    protected fun maybeShowReadingChallengePrompt() {
+        if (ReadingChallengeWidgetRepository.shouldShowOnboardingDialog() &&
+            this !is ReadingChallengeOnboardingActivity && this !is InitialOnboardingActivity) {
+            requestReadingChallengeActivity.launch(ReadingChallengeOnboardingActivity.newIntent(this))
+        }
+    }
+
     private fun removeSplashBackground() {
-        window.setBackgroundDrawable(ColorDrawable(ResourceUtil.getThemedColor(this, R.attr.paper_color)))
+        window.setBackgroundDrawable(ResourceUtil.getThemedColor(this, R.attr.paper_color).toDrawable())
     }
 
     private fun maybeShowLoggedOutInBackgroundDialog() {
         if (Prefs.loggedOutInBackground) {
             Prefs.loggedOutInBackground = false
+
+            val instrument = TestKitchenAdapter.client.getInstrument("apps-authentication")
+                .setDefaultActionSource("logout_background_dialog")
+                .startFunnel("logout_account_background")
+            instrument.submitInteraction("impression")
+
             MaterialAlertDialogBuilder(this)
                     .setCancelable(false)
                     .setTitle(R.string.logged_out_in_background_title)
                     .setMessage(R.string.logged_out_in_background_dialog)
-                    .setPositiveButton(R.string.logged_out_in_background_login) { _, _ -> startActivity(LoginActivity.newIntent(this@BaseActivity, LoginActivity.SOURCE_LOGOUT_BACKGROUND)) }
-                    .setNegativeButton(R.string.logged_out_in_background_cancel, null)
+                    .setPositiveButton(R.string.logged_out_in_background_login) { _, _ ->
+                        instrument.submitInteraction("click", elementId = "login_button")
+                        startActivity(LoginActivity.newIntent(this@BaseActivity, LoginActivity.SOURCE_LOGOUT_BACKGROUND))
+                    }
+                    .setNegativeButton(R.string.logged_out_in_background_cancel) { _, _ ->
+                        instrument.submitInteraction("click", elementId = "cancel")
+                    }
                     .show()
         }
     }

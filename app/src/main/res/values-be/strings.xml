@@ -152,6 +152,7 @@
   <string name="dialog_message_leaving_edit">Унесеныя змены не захаваны. Вы ўпэўнены, што хочаце пакінуць старонку?</string>
   <string name="dialog_message_leaving_edit_leave">Сысці</string>
   <string name="dialog_message_leaving_edit_stay">Застацца</string>
+  <string name="dialog_confirm_delete_donation_history_cancel">Скасаваць</string>
   <string name="menu_show_toc">Змест</string>
   <string name="search_no_results_found">Нічога не знойдзена</string>
   <string name="search_reading_list_no_results">Не знойдзена вынікаў у \"%s\"</string>
@@ -500,7 +501,7 @@
   <string name="theme_category_editing">Праўленне</string>
   <string name="reading_focus_mode">Рэжым чытання</string>
   <string name="reading_focus_mode_detail">Схоўвае функцыі рэдагавання і ніжнюю панэль пры прагортцы</string>
-  <string name="editing_syntax_highlight_label">Выдзяленне сінтаксісу</string>
+  <string name="editing_syntax_highlight_label">Вылучэнне сінтаксісу</string>
   <string name="editing_line_numbers_label">Паказаць нумары радкоў</string>
   <string name="editing_monospace_font_label">Выкарыстоўваць монашырынны шрыфт</string>
   <string name="editing_typing_suggestions">Паказваць аўтадапаўненне пры ўводзе</string>
@@ -1456,7 +1457,7 @@
   <string name="revision_diff_paragraph_removed">Абзац выдалены</string>
   <string name="revision_diff_protected">Змены, зробленыя ў гэтай рэдакцыі, не з’яўляюцца агульнадаступнымі.</string>
   <string name="revision_undo_title">Ці вы ўпэўнены, што хочаце адкаціць праўку?</string>
-  <string name="revision_undo_message">Адмена азначае прыбранне зменаў, унесеных адным або некальнікімі рэдагаваннямі.</string>
+  <string name="revision_undo_message">Скасаванне азначае прыбранне зменаў, унесеных адным ці болей рэдагаваннямі.</string>
   <string name="revision_undo_summary_hint">Апісанне (неабавязкова)</string>
   <string name="revision_undo_reason">Падзяліцеся прычынай адкату</string>
   <string name="revision_undo_success">Версія была скасавана.</string>
@@ -1501,12 +1502,12 @@
   <string name="watchlist_filter_user_intent_may_problems">Мажліва дрэнныя намеры</string>
   <string name="watchlist_filter_user_intent_likely_problems">Хутчэй дрэнныя намеры</string>
   <string name="watchlist_filter_user_intent_bad">Найхутчэй дрэнныя намеры</string>
-  <string name="watchlist_filter_user_status_header">Рэгістрацыя ўдзельніка і яго вопыт</string>
+  <string name="watchlist_filter_user_status_header">Рэгістрацыя ўдзельніка і яго досвед</string>
   <string name="watchlist_filter_user_status_unregistered">Незарэгістраваны</string>
   <string name="watchlist_filter_user_status_registered">Зарэгістраваны</string>
   <string name="watchlist_filter_user_status_newcomers">Навічкі</string>
   <string name="watchlist_filter_user_status_learners">Вучні</string>
-  <string name="watchlist_filter_user_status_experienced">Вопытныя ўдзельнікі</string>
+  <string name="watchlist_filter_user_status_experienced">Дасведчаныя ўдзельнікі</string>
   <string name="watchlist_filter_contribution_authorship_header">Аўтарства ўнёску</string>
   <string name="watchlist_filter_contribution_authorship_own">Вашы змены</string>
   <string name="watchlist_filter_contribution_authorship_except_own">Змены іншых удзельнікаў</string>
@@ -1620,7 +1621,7 @@
   <string name="patroller_tasks_filters_reset">Скінуць</string>
   <string name="patroller_tasks_filters_wiki_filter_header">Вікі</string>
   <string name="patroller_tasks_filters_all_text">Усе</string>
-  <string name="patroller_tasks_filters_user_status_header">Рэгістрацыя ўдзельніка і яго вопыт</string>
+  <string name="patroller_tasks_filters_user_status_header">Рэгістрацыя ўдзельніка і яго досвед</string>
   <string name="patroller_tasks_filters_user_status_unregistered">Незарэгістраваны</string>
   <string name="patroller_tasks_filters_user_status_unregistered_desc">Рэдактары, якія не ўвайшлі ў сістэму.</string>
   <string name="patroller_tasks_filters_user_status_registered">Зарэгістраваныя</string>
@@ -1628,8 +1629,8 @@
   <string name="patroller_tasks_filters_user_status_newcomers">Навічкі</string>
   <string name="patroller_tasks_filters_user_status_newcomers_desc">Зарэгістраваныя рэдактары, якія маюць менш за 10 правак за 4 дні актыўнасці.</string>
   <string name="patroller_tasks_filters_user_status_learners">Вучні</string>
-  <string name="patroller_tasks_filters_user_status_learners_desc">Зарэгістраваныя рэдактары, вопыт якіх знаходзіцца паміж «навічкамі» і «вопытнымі ўдзельнікамі».</string>
-  <string name="patroller_tasks_filters_user_status_experienced">Вопытныя ўдзельнікі</string>
+  <string name="patroller_tasks_filters_user_status_learners_desc">Зарэгістраваныя рэдактары, досвед якіх знаходзіцца паміж «навічкамі» і «дасведчанымі ўдзельнікамі».</string>
+  <string name="patroller_tasks_filters_user_status_experienced">Дасведчаныя ўдзельнікі</string>
   <string name="patroller_tasks_filters_user_status_experienced_desc">Зарэгістраваныя рэдактары з больш за 500 правак за 30 дзён актыўнасці.</string>
   <string name="patroller_tasks_filters_latest_revisions_header">Апошнія версіі</string>
   <string name="patroller_tasks_filters_latest_revisions_latest_revision">Апошняя версія</string>
@@ -1681,7 +1682,7 @@
   <string name="patroller_onboarding_two_watch_content">Хочаце адсочваць праўкі артыкулаў? Дадайце ў свой спіс назірання. Праглядзіце яго ў раздзеле \"Яшчэ\".</string>
   <string name="patroller_onboarding_two_talk_title">Абмеркаванне</string>
   <string name="patroller_onboarding_two_talk_content">Камунікуйце з іншымі праўнікамі. Захоўвайце часта выкарыстальныя паведамленні або выкарыстайце шаблон.</string>
-  <string name="patroller_onboarding_two_undo_title">Адмена/Адкат</string>
+  <string name="patroller_onboarding_two_undo_title">Адрабіць/Адкаціць</string>
   <string name="patroller_onboarding_two_undo_content">Выберыце \"Адкаціць\" для скасавання або адкату патэнцыйна разбуральнай праўкі.</string>
   <string name="patroller_diff_tooltip_one">\"Пашкоджанне\" прадказвае, калі праўка прычыняе шкоду ў вікі.</string>
   <string name="patroller_diff_tooltip_two">Намер прадказвае імавернасць добрасумленнага захавання праўкі.</string>
@@ -1721,7 +1722,7 @@
   <string name="email_report_patroller_tasks_subject">Справаздача аб праблеме - функцыя патрулявання правак</string>
   <string name="email_report_patroller_tasks_body">Я сутыкнуўся з праблемай функцыі патрулявання правак:\n- [Апішыце канкрэтную праблему]\n\nДзеянні, якія я хацеў бы бачыць:\n- [Апішыце прапанаванае рашэнне]\n\n [Здыкі экрану або спасылкі]</string>
   <string name="donation_campaign_maybe_later_snackbar">Заўтра нагадаем яшчэ раз.</string>
-  <string name="donation_campaign_donated_snackbar">Дзякуй, дарагі донар! Ваша шчодрасць дапамагае Вікіпедыі і роднасным сайтам развівацца.</string>
+  <string name="donation_campaign_donated_snackbar" fuzzy="true">Дзякуй, дарагі донар! Ваша шчодрасць дапамагае Вікіпедыі і роднасным сайтам развівацца.</string>
   <string name="donation_campaign_go_back_button">Вярнуцца</string>
   <string name="menu_single_webview_open_external">Адкрыць у сістэмным браўзеры</string>
   <string name="donate_gpay_dialog_title">Ахвяраваць з дапамогай Google Pay?</string>
@@ -1763,4 +1764,5 @@
   <string name="survey_dialog_cancel">Скасаваць</string>
   <string name="survey_dialog_submit">Адправіць</string>
   <string name="survey_dialog_submitted_snackbar" fuzzy="true">Водгук адпраўлены.</string>
+  <string name="year_in_review_survey_cancel">Скасаваць</string>
 </resources>

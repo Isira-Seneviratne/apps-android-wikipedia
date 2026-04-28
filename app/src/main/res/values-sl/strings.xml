@@ -1735,7 +1735,7 @@
   <string name="email_report_patroller_tasks_subject">Poročilo o težavi – možnost patruljiranja urejanj</string>
   <string name="email_report_patroller_tasks_body">Naletel_a sem na težavo z možnostjo Patruljiranje urejanj:\n– [Opišite specifično težavo]\n\nVedenje, ki bi ga rad_a videl_a, je:\n– [Opišite predlagano rešitev]\n\n[]</string>
   <string name="donation_campaign_maybe_later_snackbar">Znova vas bomo opomnili jutri.</string>
-  <string name="donation_campaign_donated_snackbar">Hvala vam, spoštovani darovalec! Vaša velikodušnost pomaga ohranjati uspeh Wikipedije in njenih sestrskih spletnih mest.</string>
+  <string name="donation_campaign_donated_snackbar" fuzzy="true">Hvala vam, spoštovani darovalec! Vaša velikodušnost pomaga ohranjati uspeh Wikipedije in njenih sestrskih spletnih mest.</string>
   <string name="donation_campaign_go_back_button">Nazaj</string>
   <string name="menu_single_webview_open_external">Odprtje v sistemskem brskalniku</string>
   <string name="donate_gpay_dialog_title">Želite donirati z Google Pay?</string>
@@ -1753,7 +1753,7 @@
   <string name="donate_gpay_help_other_ways">Drugi načini doniranja</string>
   <string name="donate_gpay_help_faq">Pogosto postavljena vprašanja</string>
   <string name="donate_gpay_help_tax">Podatki o davčnih olajšavah</string>
-  <string name="donation_history_deleted_message_snackbar">Zgodovina doniranja je izbrisana</string>
+  <string name="donation_history_deleted_message_snackbar" fuzzy="true">Zgodovina doniranja je izbrisana</string>
   <string name="places_title">Kraji</string>
   <string name="places_permissions_denied">Za ogled vaše lokacije na zemljevidu potrebujete dovoljenje za lokacijo. Prosimo, poskusite znova.</string>
   <string name="places_search_hint">Iskanje po krajih</string>
@@ -1785,8 +1785,8 @@
   <string name="survey_dialog_submitted_snackbar">Povratne informacije so poslane. Hvalaǃ</string>
   <string name="on_this_day_game_entry_dialog_title">Predstavljamo</string>
   <string name="on_this_day_game_entry_dialog_subtitle">Igre Wikipedije</string>
-  <string name="on_this_day_game_entry_dialog_button">Igraj današnjo igro</string>
-  <string name="on_this_day_game_entry_dialog_snackbar_message">Igre Wikipedije so na voljo v viru Raziskuj</string>
+  <string name="on_this_day_game_entry_dialog_button" fuzzy="true">Igraj današnjo igro</string>
+  <string name="on_this_day_game_entry_dialog_snackbar_message" fuzzy="true">Igre Wikipedije so na voljo v viru Raziskuj</string>
   <string name="on_this_day_game_title">Kateri je bil prvi?</string>
   <string name="on_this_day_game_dialog_button">Igraj</string>
   <string name="on_this_day_game_splash_message">Uganite, kateri dogodek na današnji dan se je zgodil prvi v zgodovini.</string>
@@ -1797,13 +1797,8 @@
   <string name="on_this_day_game_point">+1 točka</string>
   <string name="on_this_day_game_next">Naslednje vprašanje</string>
   <string name="on_this_day_game_finish">Končni rezultati</string>
-  <string name="on_this_day_game_pause_title">Premor igre?</string>
-  <string name="on_this_day_game_pause_body">Vaš napredek bo shranjen za ta dan. Igro najdete v viru Raziskuj.</string>
-  <string name="on_this_day_game_pause_negative">Igraj naprej</string>
-  <string name="on_this_day_game_pause_positive">Razumem</string>
   <string name="on_this_day_game_feed_entry_card_heading">Igre Wikipedije</string>
   <string name="on_this_day_game_feed_entry_card_title">Kateri je bil prvi?</string>
-  <string name="on_this_day_game_feed_entry_card_subtitle">Uganite, kateri dogodek na današnji dan se je zgodil prvi v zgodovini.</string>
   <string name="on_this_day_game_result">Vaš rezultat: %1$d/%2$d.</string>
   <string name="on_this_day_game_next_in">Naslednja igra v %s</string>
   <string name="on_this_day_game_your_stats">Vaša statistika</string>
@@ -1839,4 +1834,5 @@
   <string name="on_this_day_game_report_email_body">Naletel_a sem na težavo z možnostjo iger Wikipedije:\n– [Opišite specifično težavo]\n\nVedenje, ki bi ga rad_a videl_a, je:\n– [Opišite predlagano rešitev]</string>
   <string name="on_this_day_game_notification_undo">Razveljavi</string>
   <string name="on_this_day_game_share_link_message">Igram \"Kaj se je zgodilo najprej?\", vsakodnevno zanimivo igro v aplikaciji Wikipedia Android %s</string>
+  <string name="donation_reminders_prompt_positive_button">Donirajte zdaj</string>
 </resources>

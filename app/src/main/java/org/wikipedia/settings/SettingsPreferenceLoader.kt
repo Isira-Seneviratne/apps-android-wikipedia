@@ -11,6 +11,7 @@ import org.wikipedia.BuildConfig
 import org.wikipedia.Constants
 import org.wikipedia.R
 import org.wikipedia.WikipediaApp
+import org.wikipedia.analytics.eventplatform.DonorExperienceEvent
 import org.wikipedia.analytics.eventplatform.RecommendedReadingListEvent
 import org.wikipedia.analytics.eventplatform.YearInReviewEvent
 import org.wikipedia.auth.AccountUtil
@@ -84,8 +85,6 @@ internal class SettingsPreferenceLoader(fragment: PreferenceFragmentCompat) : Ba
                     .setPositiveButton(R.string.year_in_review_disable_positive_button) { _, _ ->
                         YearInReviewEvent.submit(action = "yir_off_confirm_click", slide = "setting")
                         Prefs.yearInReviewModelData = emptyMap()
-                        Prefs.yearInReviewReadingListSurveyShown = false
-                        Prefs.yearInReviewReadingListVisitCount = 0
                         (preference as SwitchPreferenceCompat).isChecked = false
                     }
                     .setNegativeButton(R.string.year_in_review_disable_negative_button) { _, _ ->
@@ -134,6 +133,10 @@ internal class SettingsPreferenceLoader(fragment: PreferenceFragmentCompat) : Ba
                 }
         }
         findPreference(R.string.preference_key_delete_local_donation_history).onPreferenceClickListener = Preference.OnPreferenceClickListener {
+            DonorExperienceEvent.logDonationReminderAction(
+                activeInterface = "global_setting",
+                action = "clear_donation_hist_click"
+            )
             val hasDonations = Prefs.donationResults.isNotEmpty()
 
             if (hasDonations) {

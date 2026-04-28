@@ -29,6 +29,7 @@
 * Vinickw
 * Vitorvicentevalente
 * Webysther
+* Wrai
 -->
 <resources>
   <string name="app_name_prod">Wikipédia</string>
@@ -1023,7 +1024,7 @@
   <string name="suggested_edits_image_tags_add_tag">Adicionar etiqueta</string>
   <string name="suggested_edits_image_tags_exit_dialog_message">As etiquetas não publicadas não serão gravadas</string>
   <string name="suggested_edits_image_zoom_tooltip">Junte/separe dois dedos para ampliar/afastar esta imagem.</string>
-  <string name="suggested_edits_encouragement_message">%s, obrigado pelas suas edições. Pode encontrar abaixo outras formas de contribuir para a Wikipédia.</string>
+  <string name="suggested_edits_encouragement_message" fuzzy="true">%s, obrigado pelas suas edições. Pode encontrar abaixo outras formas de contribuir para a Wikipédia.</string>
   <string name="suggested_edits_onboarding_message">&lt;/b&gt;Olá %s&lt;/b&gt;, encontra abaixo algumas formas rápidas e divertidas de ajudar a melhorar a Wikipédia. Verá a diferença que está a fazer logo que começar. Divirta-se a editar!</string>
   <string name="suggested_edits_image_captions_task_detail">Descreva uma imagem para ajudar os leitores a entenderem o seu significado e contexto.</string>
   <string name="suggested_edits_add_descriptions_task_detail">Resuma um artigo para ajudar os leitores a compreenderem imediatamente o assunto.</string>
@@ -1707,7 +1708,7 @@
   <string name="email_report_patroller_tasks_subject">Relatório de problema - Funcionalidade \"Patrulha de Edições\"</string>
   <string name="email_report_patroller_tasks_body">Encontrei um problema com a funcionalidade \"Patrulha de Edições\":\n- [Descrever o problema específico]\n\nO comportamento que gostaria de ver é:\n- [Descrever a solução proposta]\n\n[Capturas de ecrã ou hiperligações]</string>
   <string name="donation_campaign_maybe_later_snackbar">Iremos lembrá-lo novamente amanhã.</string>
-  <string name="donation_campaign_donated_snackbar">Obrigado, caro benfeitor! A sua generosidade ajuda a continuar o desenvolvimento da Wikipédia e dos \"sites\" associados.</string>
+  <string name="donation_campaign_donated_snackbar" fuzzy="true">Obrigado, caro benfeitor! A sua generosidade ajuda a continuar o desenvolvimento da Wikipédia e dos \"sites\" associados.</string>
   <string name="donation_campaign_go_back_button">Voltar</string>
   <string name="menu_single_webview_open_external">Abrir no \'\'browser\'\' do sistema</string>
   <string name="donate_gpay_dialog_title">Doar com Google Pay?</string>
@@ -1725,7 +1726,7 @@
   <string name="donate_gpay_help_other_ways">Outras formas de contribuir</string>
   <string name="donate_gpay_help_faq">Perguntas mais frequentes</string>
   <string name="donate_gpay_help_tax">Informação sobre dedução fiscal</string>
-  <string name="donation_history_deleted_message_snackbar">Histórico de doadores eliminados</string>
+  <string name="donation_history_deleted_message_snackbar" fuzzy="true">Histórico de doadores eliminados</string>
   <string name="places_title">Lugares</string>
   <string name="places_permissions_denied">É necessária a permissão de localização para ver a sua localização no mapa. Por favor, tente novamente.</string>
   <string name="places_search_hint">Procurar por lugares</string>
@@ -1757,8 +1758,8 @@
   <string name="survey_dialog_submitted_snackbar">Comentário enviado. Obrigado!</string>
   <string name="on_this_day_game_entry_dialog_title">Introdução</string>
   <string name="on_this_day_game_entry_dialog_subtitle">Jogos da Wikipédia</string>
-  <string name="on_this_day_game_entry_dialog_button">Jogue o jogo de hoje</string>
-  <string name="on_this_day_game_entry_dialog_snackbar_message">Os jogos da Wikipédia estão disponíveis na feed de Explore.</string>
+  <string name="on_this_day_game_entry_dialog_button" fuzzy="true">Jogue o jogo de hoje</string>
+  <string name="on_this_day_game_entry_dialog_snackbar_message" fuzzy="true">Os jogos da Wikipédia estão disponíveis na feed de Explore.</string>
   <string name="on_this_day_game_title">Qual foi o primeiro?</string>
   <string name="on_this_day_game_dialog_button">Jogar</string>
   <string name="on_this_day_game_splash_message">Adivinhe qual o evento que ocorreu primeiro neste dia na história.</string>
@@ -1770,10 +1771,7 @@
   <string name="on_this_day_game_point">+1 ponto</string>
   <string name="on_this_day_game_next">Questão seguinte</string>
   <string name="on_this_day_game_finish">Resultados finais</string>
-  <string name="on_this_day_game_share_button">Partilhar</string>
-  <string name="on_this_day_game_pause_title">Pausar o jogo?</string>
-  <string name="on_this_day_game_pause_negative">Continuar a jogar .</string>
-  <string name="on_this_day_game_pause_positive">Entendi</string>
+  <string name="on_this_day_game_share_button" fuzzy="true">Partilhar</string>
   <string name="on_this_day_game_feed_entry_card_heading">Jogos da Wikipédia</string>
   <string name="on_this_day_game_feed_entry_card_title">Qual foi o primeiro?</string>
   <string name="on_this_day_game_result">Você pontuou %1$d/%2$d.</string>
@@ -1904,4 +1902,37 @@
   <string name="recommended_reading_list_settings_updates_base_snackbar_action">Anular</string>
   <string name="recommended_reading_list_settings_interests">Interesses</string>
   <string name="recommended_reading_list_settings_notifications_title">Notificações</string>
+  <string name="hybrid_search_search_hint">Pesquise ou pergunte qualquer coisa</string>
+  <string name="hybrid_search_article_search_hint">Pergunte sobre %s</string>
+  <string name="hybrid_search_suggestion_title">Pesquisar por:</string>
+  <string name="hybrid_search_onboarding_learn_more">Saiba mais</string>
+  <string name="hybrid_search_onboarding_search_title">Faça perguntas, obtenha respostas</string>
+  <string name="hybrid_search_onboarding_search_description">Este recurso experimental interpreta linguagem natural. Em vez de pesquisar por palavras-chave, descreva o que você quer saber.</string>
+  <string name="hybrid_search_onboarding_opt_in_choice_title">Recurso beta</string>
+  <string name="hybrid_search_onboarding_opt_in_choice_description">Disponível por tempo limitado durante este experimento.</string>
+  <string name="hybrid_search_beta_tag" fuzzy="true">Beta</string>
+  <string name="hybrid_search_experimental_feature_switch_label">Participar do experimento</string>
+  <string name="hybrid_search_onboarding_search_example_title">Precisa de inspiração?</string>
+  <string name="hybrid_search_onboarding_search_example_description">Use um dos exemplos de pesquisa abaixo.</string>
+  <string name="hybrid_search_onboarding_opt_out_toast_message">Você optou por não participar do experimento.</string>
+  <string name="hybrid_search_onboarding_search_example_query_pluto_as_planet">Quando Plutão deixou de ser considerado um planeta?</string>
+  <string name="hybrid_search_onboarding_search_example_query_first_olympics" fuzzy="true">Primeiras Olimpíadas</string>
+  <string name="hybrid_search_onboarding_search_example_query_rna_vs_dna">RNA vs. DNA</string>
+  <string name="hybrid_search_onboarding_search_example_query_pineapple_pizza">Por que as pessoas colocam abacaxi na pizza?</string>
+  <string name="hybrid_search_onboarding_search_example_query_biggest_cities_europe">Quais são as maiores cidades da Europa?</string>
+  <string name="hybrid_search_onboarding_screen_title">Uma nova maneira de pesquisar</string>
+  <string name="hybrid_search_results_header_description" fuzzy="true">Trechos de artigos da Wikipédia, escrita por pessoas como você</string>
+  <string name="hybrid_search_results_rate_label">Avalie este resultado</string>
+  <string name="hybrid_search_results_rated_label">Avaliado</string>
+  <string name="hybrid_search_results_rate_thumb_up">Dê um joinha!</string>
+  <string name="hybrid_search_results_rate_thumb_down">Dê um voto negativo.</string>
+  <string name="hybrid_lexical_search_results_empty">Nenhum título de artigo corresponde a esta consulta.</string>
+  <string name="hybrid_search_results_empty">A pesquisa avançada está temporariamente indisponível.</string>
+  <string name="hybrid_search_no_results_header">Nenhum resultado</string>
+  <string name="hybrid_search_no_results_description">Este tópico não está retornando trechos de artigos no momento. Aqui estão algumas coisas que você pode tentar:</string>
+  <string name="hybrid_search_no_results_suggestion_rephrase_text">Reformular sua pesquisa</string>
+  <string name="hybrid_search_no_results_suggestion_try_related_topic">Tentar um tópico relacionado</string>
+  <string name="hybrid_search_error_message">Algo deu errado. Tente novamente mais tarde.</string>
+  <string name="hybrid_search_who_is_prefix">Quem é %s?</string>
+  <string name="hybrid_search_turn_off_experiment_label">Desative este experimento</string>
 </resources>

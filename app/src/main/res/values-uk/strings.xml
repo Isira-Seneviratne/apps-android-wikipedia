@@ -187,7 +187,7 @@
   <string name="reading_lists_sync_login">Увійти до системи</string>
   <string name="create_account_login">Увійти до системи</string>
   <string name="menu_login">Увійти</string>
-  <string name="login_activity_title">Вхід</string>
+  <string name="login_activity_title">Увійти</string>
   <string name="login_in_progress_dialog_message">Входимо до системи…</string>
   <string name="login_success_toast">Ви ввійшли!</string>
   <string name="reset_password_title">Встановіть пароль</string>
@@ -270,6 +270,7 @@
   <string name="about_description">Про додаток Вікіпедії</string>
   <string name="privacy_policy_description">Політика конфіденційності</string>
   <string name="terms_of_use_description">Умови використання</string>
+  <string name="legal_safety_contacts_description">Контакти з юридичних і безпекових питань</string>
   <string name="about_wikipedia_url">https://uk.wikipedia.org/wiki/Вікіпедія:Про</string>
   <string name="privacy_policy_url">https://foundation.wikimedia.org/wiki/Special:MyLanguage/Privacy_policy</string>
   <string name="android_app_faq_url">https://www.mediawiki.org/wiki/Wikimedia_Apps/Android_FAQ/uk</string>
@@ -1320,7 +1321,7 @@
   <string name="activity_tab_customize_screen_editing_insights_switch_title">Статистика редагування</string>
   <string name="activity_tab_customize_screen_impact_switch_title">Вплив за весь час</string>
   <string name="activity_tab_customize_screen_games_switch_title">Статистика гри</string>
-  <string name="activity_tab_customize_screen_donations_switch_title">Минуле пожертвування в застосунку</string>
+  <string name="activity_tab_customize_screen_donations_switch_title">Минула пожертва в застосунку</string>
   <string name="activity_tab_customize_screen_timeline_switch_title">Хронологія поведінки</string>
   <string name="activity_tab_customize_screen_no_modules_message">Модулі активності вимкнено. &lt;a href=\"#\"&gt;Увімкніть їх&lt;/a&gt;, щоб переглядати оновлення на цій вкладці.</string>
   <string name="activity_tab_timeline_today">Сьогодні</string>
@@ -1339,6 +1340,7 @@
   <string name="activity_tab_onboarding_stay_in_control_message">Виберіть, які модулі відображати. Усі персональні дані залишаються конфіденційними на вашому пристрої, а історію переглядів можна очистити будь-коли.</string>
   <string name="edits_screen_what_is_title">Редагування у застосунку Вікіпедії</string>
   <string name="edits_screen_what_is_body">Не знаєте, з чого почати редагування? Спробуйте «Пропоновані редагування» — функцію, яка дає змогу робити невеликий, але важливий внесок у Вікіпедію. Або ж перейдіть безпосередньо до статті, яка вас цікавить, і внесіть зміни за допомогою вікітексту.</string>
+  <string name="activity_tab_snackbar_label">Статистика гри відображається для вашої основної мови.</string>
   <string name="file_page_activity_title">Сторінка файлу</string>
   <string name="file_page_add_image_caption_button">Додати підпис зображення</string>
   <string name="file_page_add_image_tags_button">Додайте теги зображень</string>
@@ -1368,6 +1370,7 @@
   <string name="onboarding_multilingual_secondary_text">Ми знайшли такі мови на Вашому пристрої:</string>
   <string name="onboarding_multilingual_add_language_text">Додати або редагувати мови</string>
   <string name="onboarding_welcome_title_v2">Вільна енциклопедія\n…понад 300 мовами</string>
+  <string name="onboarding_next">Далі</string>
   <string name="app_shortcuts_random">Випадкова</string>
   <string name="app_shortcuts_continue_reading">Продовжити читання</string>
   <string name="app_shortcuts_search">Пошук</string>
@@ -1478,7 +1481,7 @@
   <string name="main_drawer_login">Увійти до Вікіпедії</string>
   <string name="main_tooltip_action_button">Розпочати</string>
   <string name="main_tooltip_watchlist_title">Список спостереження</string>
-  <string name="main_tooltip_watchlist_text">Статті та сторінки, які ви раніше додали до свого списку спостереження, можна знайти в меню Більше, в пункті &lt;b&gt;Список спостереження&lt;/b&gt;.</string>
+  <string name="main_tooltip_watchlist_text">Знайдіть статті та сторінки, які ви раніше додали до свого списку спостереження, у меню «Більше» в розділі &lt;b&gt;«Список спостереження»&lt;/b&gt;.</string>
   <string name="custom_date_picker_dialog_ok_button_text">Гаразд</string>
   <string name="text_input_dialog_ok_button_text">Гаразд</string>
   <string name="text_input_dialog_cancel_button_text">Назад</string>
@@ -1857,7 +1860,7 @@
   <string name="email_report_patroller_tasks_subject">Звіт про проблему – функція патрулювання редагувань</string>
   <string name="email_report_patroller_tasks_body">У мене виникла проблема з функцією патрулювання редагувань:\n- [Опишіть конкретну проблему]\n\nОчікувана мною поведінка функції:\n- [Опишіть запропоноване рішення]\n\n[Скріншоти чи посилання]</string>
   <string name="donation_campaign_maybe_later_snackbar">Завтра ми ще раз нагадаємо.</string>
-  <string name="donation_campaign_donated_snackbar">Дякуємо, шановний доноре! Ваша щедрість допомагає Вікіпедії та її сестринським сайтам процвітати.</string>
+  <string name="donation_campaign_donated_snackbar">Дякуємо, шановний доноре! Ваша щедрість допомагає процвітати Вікіпедії та іншим проєктам, які надають безкоштовні знання.</string>
   <string name="donation_campaign_go_back_button">Назад</string>
   <string name="menu_single_webview_open_external">Відкрити в системному браузері</string>
   <string name="donate_gpay_dialog_title">Пожертвувати за допомогою Google Pay?</string>
@@ -1876,7 +1879,8 @@
   <string name="donate_gpay_help_other_ways">Способи пожертвувати кошти</string>
   <string name="donate_gpay_help_faq">Часті запитання</string>
   <string name="donate_gpay_help_tax">Про звільнення від податків</string>
-  <string name="donation_history_deleted_message_snackbar">Історію пожертв вилучено</string>
+  <string name="donation_history_deleted_message_snackbar">Історію пожертв очищено.</string>
+  <string name="donation_history_no_history_message_snackbar">У вас немає історії пожертв для очищення.</string>
   <string name="places_title">Місця</string>
   <string name="places_permissions_denied">Щоб побачити ваше місце розташування на карті, потрібно надати дозвіл на визначення місця розташування. Спробуйте ще раз.</string>
   <string name="places_search_hint">Шукати місця</string>
@@ -1906,10 +1910,15 @@
   <string name="survey_dialog_general_maybe">Можливо</string>
   <string name="survey_dialog_input_hint">Додатковий відгук</string>
   <string name="survey_dialog_submitted_snackbar">Відгук надіслано. Дякуємо!</string>
+  <string name="games_hub_activity_title">Ігри</string>
+  <string name="games_hub_activity_games_unavailable_message">Цією мовою поки що немає ігор! Ігри використовують контент, створений редакторами-волонтерами для Вікіпедії кожною мовою.</string>
+  <string name="games_hub_activity_games_unavailable_message_learn_more_action">Дізнатися більше</string>
+  <string name="games_hub_activity_overflow_view_game_stats">Переглянути статистику гри</string>
+  <string name="games_hub_activity_overflow_learn_more">Дізнатися більше</string>
   <string name="on_this_day_game_entry_dialog_title">Знайомтеся</string>
   <string name="on_this_day_game_entry_dialog_subtitle">Ігри Вікіпедії</string>
-  <string name="on_this_day_game_entry_dialog_button">Грати сьогоднішню гру</string>
-  <string name="on_this_day_game_entry_dialog_snackbar_message">Ігри Вікіпедії доступні у стрічці.</string>
+  <string name="on_this_day_game_entry_dialog_button">Грати</string>
+  <string name="on_this_day_game_entry_dialog_snackbar_message">Ігри Вікіпедії доступні в Ігровому центрі, який знаходиться у меню «Більше».</string>
   <string name="on_this_day_game_title">Що було першим?</string>
   <string name="on_this_day_game_dialog_button">Грати</string>
   <string name="on_this_day_game_splash_message">Вгадайте, яка подія цього дня в історії відбулася першою.</string>
@@ -1921,14 +1930,9 @@
   <string name="on_this_day_game_point">+1 бал</string>
   <string name="on_this_day_game_next">Наступне запитання</string>
   <string name="on_this_day_game_finish">Остаточний результат</string>
-  <string name="on_this_day_game_share_button">Поділитися</string>
-  <string name="on_this_day_game_pause_title">Призупинити гру?</string>
-  <string name="on_this_day_game_pause_body">Ваш прогрес буде збережено. Ви можете знайти гру у своїй стрічці.</string>
-  <string name="on_this_day_game_pause_negative">Продовжити грати</string>
-  <string name="on_this_day_game_pause_positive">Зрозуміло</string>
+  <string name="on_this_day_game_share_button">Поділитися результатом</string>
   <string name="on_this_day_game_feed_entry_card_heading">Ігри Вікіпедії</string>
   <string name="on_this_day_game_feed_entry_card_title">Що було першим?</string>
-  <string name="on_this_day_game_feed_entry_card_subtitle">Вгадайте, яка подія цього дня в історії відбулася першою.</string>
   <string name="on_this_day_game_result">Ваш рахунок — %1$d/%2$d.</string>
   <string name="on_this_day_game_next_in">Наступна гра через %s</string>
   <string name="on_this_day_game_your_stats">Ваша статистика</string>
@@ -1973,9 +1977,21 @@
   <string name="on_this_day_game_archive_btn_text">Відграти архів</string>
   <string name="on_this_day_game_review_results_btn_text">Переглянути результати</string>
   <string name="on_this_day_game_score_message">Ваш результат сьогодні — %1$d/%2$d.</string>
+  <string name="on_this_day_game_play_today_btn_text">Зіграти сьогоднішню гру</string>
   <string name="on_this_day_game_continue_playing_btn_text">Продовжити гру</string>
   <string name="on_this_day_game_sound_on">Увімкнути звук</string>
   <string name="on_this_day_game_sound_off">Вимкнути звук</string>
+  <string name="on_this_day_game_more_label">Ще</string>
+  <string name="on_this_day_game_card_progress_label">Ви на питанні %d. Продовжуйте вгадувати, яка подія відбулася першою в цей день в історії.</string>
+  <string name="on_this_day_game_card_progress_short_label">Ви на питанні %d.</string>
+  <string name="on_this_day_game_explore_feed_card_score_message">Ви набрали %1$d/%2$d очок у сьогоднішній грі. Наступна гра через %3$s</string>
+  <string name="on_this_day_game_explore_feed_card_score_short_message">Ваш результат сьогодні — %1$d/%2$d.</string>
+  <string name="on_this_day_game_card_archive_label">Архів</string>
+  <string name="on_this_day_game_stats_log_in_prompt_card_button">Увійти</string>
+  <string name="on_this_day_game_stats_log_in_prompt_card_title">Увійдіть, щоб переглянути статистику гри</string>
+  <string name="on_this_day_game_stats_log_in_prompt_card_description">Дивіться свої серії, результати та інше</string>
+  <string name="wikipedia_games_title">Ігри Вікіпедії</string>
+  <string name="wikipedia_games_subtitle">Щоденні вікторини на основі контенту Вікіпедії.</string>
   <string name="year_in_review_learn_more">Дізнатися більше</string>
   <string name="year_in_review_get_started">Розпочати</string>
   <string name="year_in_review_topbar_w_icon">Іконка W Вікіпедії</string>
@@ -2018,7 +2034,7 @@
   <string name="year_in_review_slide_app_icon_title_unlocked">Нову іконку програми розблоковано для вашого головного екрана</string>
   <string name="year_in_review_slide_app_icon_title_unlock">Розблокуйте свою винагороду за внесок на наступний рік!</string>
   <string name="year_in_review_slide_app_icon_body_unlocked">Активуйте нову іконку програми в налаштуваннях у розділі «Іконка програми». Дякуємо, що вкладаєтеся в майбутнє вільних знань. Ваш внесок як %1$s у %2$d допомагає прокласти шлях до світу вільної інформації, і тому для вас розблоковано спеціальну іконку для Вікіпедії на вашому головному екрані.</string>
-  <string name="year_in_review_slide_app_icon_body_unlock">Ми раді, що Вікіпедія була частиною вашого %1$d року! Розблокуйте спеціальну винагороду у своєму «Огляді року %2$d», зробивши внесок — чи то шляхом &lt;a href=\"%3$s\"&gt;редагування Вікіпедії&lt;/a&gt;, чи то шляхом пожертви у &lt;a href=\"%4$s\"&gt;Фонд Вікімедіа&lt;/a&gt;, некомерційну організацію, яка стоїть за нею. Якщо Вікіпедія корисна для вас, розгляньте можливість пожертвувати на підтримку її майбутнього та збереження її безкоштовною, без реклами, надійною та доступною для всіх.</string>
+  <string name="year_in_review_slide_app_icon_body_unlock">Ми раді, що Вікіпедія була частиною вашого %1$d року! Розблокуйте спеціальну нагороду у своєму «Огляді року %2$d», ставши учасником — чи то шляхом &lt;a href=\"%3$s\"&gt;редагування Вікіпедії&lt;/a&gt;, чи то шляхом пожертви з додатку на некомерційний &lt;a href=\"%4$s\"&gt;Фонд Вікімедіа&lt;/a&gt;. Якщо Вікіпедія корисна для вас, розгляньте, будь ласка, можливість пожертви на підтримку її майбутнього, щоб вона залишалася безкоштовною, без реклами, надійною та доступною для всіх. Якщо ви зробили пожертву деінде, ваша підтримка дуже цінується.</string>
   <string name="year_in_review_slide_app_icon_donor">донора</string>
   <string name="year_in_review_slide_app_icon_editor">редактора</string>
   <string name="year_in_review_slide_app_icon_donor_and_editor">донора і редактора</string>
@@ -2044,10 +2060,10 @@
   <string name="year_in_review_slide_top_categories_body">Категорії об\'єднують статті на схожі теми. У %1$d ви не раз переглядали статті в цих цікавих категоріях: %2$s</string>
   <string name="year_in_review_slide_most_read_english_articles_headline">Найпопулярніші статті англійської Вікіпедії</string>
   <plurals name="year_in_review_slide_most_read_english_articles_body">
-    <item quantity="one">Коли люди хочуть дізнатися про наш світ — хороший, поганий, дивний і дикий водночас — вони звертаються до Вікіпедії. На %1$d-му місці за відвідуваністю в англійській Вікіпедії була ця стаття: %2$s &lt;br /&gt;Детальніше про це читайте у &lt;a href=\"%3$s\"&gt;нашому дописі блогу&lt;/a&gt;.</item>
-    <item quantity="few">Коли люди хочуть дізнатися про наш світ — хороший, поганий, дивний і дикий водночас — вони звертаються до Вікіпедії. %1$d найбільш відвідувані статті в англійській Вікіпедії були такими: %2$s &lt;br /&gt;Детальніше про це читайте у &lt;a href=\"%3$s\"&gt;нашому дописі блогу&lt;/a&gt;.</item>
-    <item quantity="many">Коли люди хочуть дізнатися про наш світ — хороший, поганий, дивний і дикий водночас — вони звертаються до Вікіпедії. %1$d найбільш відвідуваних статей в англійській Вікіпедії були такими: %2$s &lt;br /&gt;Детальніше про це читайте у &lt;a href=\"%3$s\"&gt;нашому дописі блогу&lt;/a&gt;.</item>
-    <item quantity="other">Коли люди хочуть дізнатися про наш світ — хороший, поганий, дивний і дикий водночас — вони звертаються до Вікіпедії. %1$d найбільш відвідуваних статей в англійській Вікіпедії були такими: %2$s &lt;br /&gt;Детальніше про це читайте у &lt;a href=\"%3$s\"&gt;нашому дописі блогу&lt;/a&gt;.</item>
+    <item quantity="one">Коли люди хочуть дізнатися про наш світ, вони звертаються до Вікіпедії. На %1$d-му місці за відвідуваністю в англійській Вікіпедії була ця стаття: %2$s &lt;br /&gt;Детальніше про це читайте у &lt;a href=\"%3$s\"&gt;нашому дописі блогу&lt;/a&gt;.</item>
+    <item quantity="few">Коли люди хочуть дізнатися про наш світ, вони звертаються до Вікіпедії. %1$d найбільш відвідувані статті в англійській Вікіпедії були такими: %2$s &lt;br /&gt;Детальніше про це читайте у &lt;a href=\"%3$s\"&gt;нашому дописі блогу&lt;/a&gt;.</item>
+    <item quantity="many">Коли люди хочуть дізнатися про наш світ, вони звертаються до Вікіпедії. %1$d найбільш відвідуваних статей в англійській Вікіпедії були такими: %2$s &lt;br /&gt;Детальніше про це читайте у &lt;a href=\"%3$s\"&gt;нашому дописі блогу&lt;/a&gt;.</item>
+    <item quantity="other">Коли люди хочуть дізнатися про наш світ, вони звертаються до Вікіпедії. %1$d найбільш відвідуваних статей в англійській Вікіпедії були такими: %2$s &lt;br /&gt;Детальніше про це читайте у &lt;a href=\"%3$s\"&gt;нашому дописі блогу&lt;/a&gt;.</item>
   </plurals>
   <plurals name="year_in_review_slide_edits_viewed_times_headline">
     <item quantity="one">Ваше редагування нещодавно переглянули понад %,d раз</item>
@@ -2081,10 +2097,10 @@
     <item quantity="other">У %1$d волонтери додали %2$,d байтів до англійської Вікіпедії. Уся їхня спільна робота разом веде до постійно вдосконалюваного, заснованого на фактах та надійного ресурсу знань, який вони надають світові. Усі ми маємо знання, якими можемо поділитися, &lt;a href=\"%3$s\"&gt;дізнайтеся, як узяти участь&lt;/a&gt;.</item>
   </plurals>
   <plurals name="year_in_review_slide_edited_times_headline">
-    <item quantity="one">Ви редагували Вікіпедію %s раз</item>
-    <item quantity="few">Ви редагували Вікіпедію %s рази</item>
-    <item quantity="many">Ви редагували Вікіпедію %s разів</item>
-    <item quantity="other">Ви редагували Вікіпедію %s разів</item>
+    <item quantity="one">Ви редагували %s раз</item>
+    <item quantity="few">Ви редагували %s рази</item>
+    <item quantity="many">Ви редагували %s разів</item>
+    <item quantity="other">Ви редагували %s разів</item>
   </plurals>
   <plurals name="year_in_review_slide_edited_times_body">
     <item quantity="one">Дякуємо, що належите до редакторів-волонтерів, які роблять внесок у проєкти Вікімедіа по всьому світу. Волонтери, як ви, внесли %,d редагування у понад 300 різних мовних версій Вікіпедії.</item>
@@ -2395,16 +2411,12 @@
   <string name="recommended_reading_list_notification_subtitle">Натисніть, щоб переглянути свої останні рекомендації.</string>
   <string name="recommended_reading_list_settings_notification_subtitle_enable">Коли рекомендації оновляться, Вікіпедія надішле вам сповіщення.</string>
   <string name="recommended_reading_list_settings_toggle_enable_message">Рекомендації увімкнено. Вікіпедія підказуватиме вам статті для читання.</string>
-  <string name="donation_reminders_initial_prompt_label">Експеримент</string>
-  <string name="donation_reminders_initial_prompt_title">Підтримуйте Вікіпедію, читаючи</string>
-  <string name="donation_reminders_initial_prompt_message">Налаштуйте нагадування про пожертвування на основі кількості прочитаних вами статей, щоб Вікіпедія залишалася актуальною, без реклами та доступною для всіх.</string>
-  <string name="donation_reminders_initial_prompt_positive_button">Розпочати</string>
-  <string name="donation_reminders_initial_prompt_negative_button">Не зараз</string>
   <string name="donation_reminders_prompt_dismiss_snackbar">Нагадування про пожертви можна змінити будь-коли в налаштуваннях.</string>
   <string name="donation_settings_section_header">Пожертви</string>
-  <string name="donation_reminders_settings_title">Нагадування про пожертви</string>
-  <string name="donation_reminders_settings_thank_you_message">Приєднуйтесь до 2%% читачів, які жертвують скільки можуть, щоб Вікіпедія була безкоштовною, актуальною та доступною для всіх. Налаштуйте нагадування про пожертву зараз.</string>
-  <string name="donation_reminders_settings_donation_info">Пожертви надходять до Фонду Вікімедіа та його афілійованих організацій, які мають честь уможливлювати існування Вікіпедії та її дочірніх сайтів.</string>
+  <string name="donation_reminders_settings_title">Як вам нагадати?</string>
+  <string name="donation_reminders_settings_option_title">Нагадування про пожертву</string>
+  <string name="donation_reminders_settings_thank_you_message">Ваша щедрість допомагає Вікіпедії процвітати. Налаштуйте нагадування про пожертву залежно від кількості прочитаних вами статей.</string>
+  <string name="donation_reminders_settings_donation_info">Пожертви надходять до Фонду Вікімедіа та його афілійованих організацій, які мають честь уможливлювати існування Вікіпедії та інших проєктів вільних знань.</string>
   <string name="donation_reminders_settings_article_frequency_label">Коли я читаю</string>
   <string name="donation_reminders_settings_amount_label">Нагадати мені зробити пожертву</string>
   <string name="donation_reminders_settings_confirm_btn_label">Підтвердити нагадування</string>
@@ -2415,13 +2427,12 @@
   <string name="donation_reminders_settings_option_custom">Користувацький…</string>
   <string name="donation_reminders_snacbkbar_confirmation_label">Дякуємо! Ми нагадаємо вам пожертвувати %1$s, коли ви прочитаєте %2$s під час цього експерименту.</string>
   <string name="donation_reminders_first_milestone_reached_prompt_title">Ви прочитали %1$s з моменту, як пообіцяли %2$s</string>
-  <string name="donation_reminders_prompt_message">%1$s ви попросили нас нагадати вам про пожертву після прочитання %2$s. Якщо Вікіпедія надала вам %3$s знань, будь ласка, приєднайтесь до 2%% читачів, які роблять пожертви, та виконайте свою обіцянку.</string>
+  <string name="donation_reminders_subsequent_milestone_reached_prompt_title">Ви прочитали ще %1$s</string>
+  <string name="donation_reminders_prompt_message">Ви налаштували нагадування про пожертву %1$s, щоб жертвувати %3$s кожні %2$s, які ви прочитаєте. Готові виконати свою обіцянку підтримувати Вікіпедію?</string>
   <string name="donation_reminders_prompt_positive_button">Пожертвувати зараз</string>
   <string name="donation_reminders_prompt_negative_button">Не зараз</string>
   <string name="donation_reminders_gpay_text">Пожертвувати %s за допомогою Google Pay</string>
   <string name="donation_reminders_gpay_different_amount_text">Пожертвуйте іншу суму за допомогою Google Pay</string>
-  <string name="donation_reminders_survey_dialog_title">Допоможіть покращити нагадування про пожертви.</string>
-  <string name="donation_reminders_survey_dialog_message">Ви задоволені цією функцією?</string>
   <string name="donation_reminders_settings_description_on">Нагадування про пожертви ввімкнено. Вікіпедія нагадуватиме вам пожертвувати %1$s кожні %2$s, які ви прочитали, поки триває цей експеримент.</string>
   <string name="donation_reminders_settings_description_off">Нагадування про пожертви вимкнено.</string>
   <string name="donation_reminders_settings_tooltip_info_label">Кількість статей зберігається локально на вашому пристрої</string>
@@ -2431,4 +2442,115 @@
     <item quantity="many">%d статей</item>
     <item quantity="other">%d статей</item>
   </plurals>
+  <string name="donation_reminders_settings_no_thanks_btn_label">Ні, дякую</string>
+  <string name="donation_reminders_experiment_label">ЕКСПЕРИМЕНТ</string>
+  <string name="donation_reminders_settings_learn_more_button">Дізнатися більше</string>
+  <string name="donation_reminders_settings_report_button">Проблема з функцією</string>
+  <string name="donation_reminders_settings_report_email_subject">Звіт про проблему – Нагадування про пожертву</string>
+  <string name="donation_reminders_settings_report_email_body">У мене виникла проблема з функцією Нагадування про пожертву:\n- [Опишіть конкретну проблему]\n- [Скриншоти чи посилання]\n\nОчікувана мною поведінка функції:\n- [Опишіть запропоноване рішення]</string>
+  <string name="donation_reminders_snackbar_modify_button_label">Змінити</string>
+  <string name="hybrid_search_search_hint">Шукайте або запитуйте що завгодно</string>
+  <string name="hybrid_search_article_search_hint">Запитайте про %s</string>
+  <string name="hybrid_search_suggestion_title">Шукати:</string>
+  <string name="hybrid_search_onboarding_learn_more">Дізнатися більше</string>
+  <string name="hybrid_search_onboarding_search_title">Ставте запитання, отримуйте відповіді</string>
+  <string name="hybrid_search_onboarding_search_description">Ця експериментальна функція розуміє природну мову. Замість пошуку за ключовими словами, опишіть те, що ви хочете знати.</string>
+  <string name="hybrid_search_onboarding_opt_in_choice_title">Бета-функція</string>
+  <string name="hybrid_search_onboarding_opt_in_choice_description">Доступно протягом обмеженого часу під час цього експерименту.</string>
+  <string name="hybrid_search_beta_tag">Бета</string>
+  <string name="hybrid_search_experimental_feature_switch_label">Приєднатися до експерименту</string>
+  <string name="hybrid_search_onboarding_search_example_title">Потрібне натхнення?</string>
+  <string name="hybrid_search_onboarding_search_example_description">Скористайтеся одним із наведених нижче прикладів пошуку.</string>
+  <string name="hybrid_search_onboarding_opt_out_toast_message">Ви відмовилися від експерименту.</string>
+  <string name="hybrid_search_onboarding_search_example_query_pluto_as_planet">Коли Плутон був виключений зі списку планет?</string>
+  <string name="hybrid_search_onboarding_search_example_query_first_olympics">перші Олімпійські ігри</string>
+  <string name="hybrid_search_onboarding_search_example_query_rna_vs_dna">РНК чи ДНК</string>
+  <string name="hybrid_search_onboarding_search_example_query_pineapple_pizza">Чому люди кладуть ананас на піцу?</string>
+  <string name="hybrid_search_onboarding_search_example_query_biggest_cities_europe">Які найбільші міста в Європі?</string>
+  <string name="hybrid_search_onboarding_screen_title">Новий спосіб пошуку</string>
+  <string name="hybrid_search_results_header_description">Взято зі статей Вікіпедії, створених людьми</string>
+  <string name="hybrid_search_results_rate_label">Оцініть цей результат</string>
+  <string name="hybrid_search_results_rated_label">Оцінено</string>
+  <string name="hybrid_search_results_rate_thumb_up">Оцінка «палець вгору»</string>
+  <string name="hybrid_search_results_rate_thumb_down">Оцінка «палець униз»</string>
+  <string name="hybrid_lexical_search_results_empty">Жодна назва статті не відповідає цьому запиту.</string>
+  <string name="hybrid_search_results_empty">Розширений пошук тимчасово недоступний.</string>
+  <string name="hybrid_search_no_results_header">Немає результатів</string>
+  <string name="hybrid_search_no_results_description">Наразі ця тема не повертає уривки статей. Ось що ви можете спробувати:</string>
+  <string name="hybrid_search_no_results_suggestion_rephrase_text">Перефразуйте свій пошуковий запит</string>
+  <string name="hybrid_search_no_results_suggestion_try_related_topic">Спробуйте пов\'язану тему</string>
+  <string name="hybrid_search_error_message">Щось пішло не так. Будь ласка, спробуйте ще раз пізніше.</string>
+  <string name="hybrid_search_who_is_prefix">Хто такі %s?</string>
+  <string name="hybrid_search_turn_off_experiment_label">Вимкнути цей експеримент</string>
+  <string name="reading_challenge_widget_name">Читацький виклик</string>
+  <string name="reading_challenge_onboarding_header">Відсвяткуйте 25-річчя Вікіпедії, приєднавшись до 25-денного читацького виклику!</string>
+  <string name="reading_challenge_onboarding_read_title">Читайте 1 статтю щодня упродовж 25 днів</string>
+  <string name="reading_challenge_onboarding_read_description">Приєднуйтесь до виклику будь-коли з 1 по 31 травня, завершіть свої 25 днів за власним графіком.</string>
+  <string name="reading_challenge_onboarding_win_title">Вигравайте призи</string>
+  <string name="reading_challenge_onboarding_win_description">Завершіть 25-денну серію читання, поки триває виклик, щоб виграти спеціальні призи.</string>
+  <string name="reading_challenge_onboarding_install_title">Встановіть віджет</string>
+  <string name="reading_challenge_onboarding_install_description">Отримуйте корисні нагадування та мотивацію від нашого чарівного талісмана дня народження Малюка Глобуса.</string>
+  <string name="reading_challenge_onboarding_note">Ваша історія читання захищена. Статистика читання розраховується на основі даних, що зберігаються локально на вашому пристрої.</string>
+  <string name="reading_challenge_onboarding_learn_more_button">Дізнатися більше</string>
+  <string name="reading_challenge_onboarding_join_button">Приєднуйтесь до виклику</string>
+  <string name="reading_challenge_onboarding_prompt_title">Увійдіть, щоб приєднатися до виклику</string>
+  <string name="reading_challenge_onboarding_prompt_message">Увійдіть або створіть обліковий запис, щоб відстежувати свій прогрес у виконанні читацького виклику.</string>
+  <string name="reading_challenge_onboarding_prompt_no_thanks">Ні, дякую</string>
+  <string name="reading_challenge_onboarding_prompt_login">Увійти / приєднатися до Вікіпедії</string>
+  <string name="reading_challenge_install_prompt_title">Встановити віджет 25-денного читацького виклику</string>
+  <string name="reading_challenge_install_prompt_message">Малюк Глобус підтримує вас. Додайте віджет читацького виклику, щоб відстежувати свій прогрес на головному екрані.</string>
+  <string name="reading_challenge_install_prompt_got_it">Зрозуміло</string>
+  <string name="reading_challenge_install_prompt_add">Додати</string>
+  <string name="reading_challenge_widget_explore_button">Дослідити</string>
+  <string name="reading_challenge_widget_explore_wikipedia_button">Дослідити Вікіпедію</string>
+  <string name="reading_challenge_widget_join_challenge_button">Приєднатися до виклику</string>
+  <string name="reading_challenge_widget_join_the_challenge_button">Приєднатися до виклику</string>
+  <string name="reading_challenge_widget_search_button">Пошук</string>
+  <string name="reading_challenge_widget_random_button">Випадково</string>
+  <string name="reading_challenge_widget_collect_prize_button">Отримати приз</string>
+  <string name="reading_challenge_widget_collect_your_prize_button">Заберіть свій приз!</string>
+  <string name="reading_challenge_widget_not_live_title">Приготуйтеся до читання</string>
+  <string name="reading_challenge_widget_not_live_description">25-денний читацький виклик вже на підході.</string>
+  <string name="reading_challenge_widget_not_opted_in_title">На старт, увага, читайте!</string>
+  <string name="reading_challenge_widget_not_opted_in_description">Приєднуйтесь до 25-денного виклику та отримуйте спеціальні призи.</string>
+  <plurals name="reading_challenge_small_widget_streak">
+    <item quantity="one">%d день</item>
+    <item quantity="few">%d дні</item>
+    <item quantity="many">%d днів</item>
+    <item quantity="other">%d днів</item>
+  </plurals>
+  <plurals name="reading_challenge_small_widget_streak_final">
+    <item quantity="one">%1$d з %2$d</item>
+    <item quantity="few">%1$d з %2$d</item>
+    <item quantity="many">%1$d з %2$d</item>
+    <item quantity="other">%1$d з %2$d</item>
+  </plurals>
+  <plurals name="reading_challenge_small_widget_streak_final_large">
+    <item quantity="one">%1$d з %2$d дня</item>
+    <item quantity="few">%1$d з %2$d днів</item>
+    <item quantity="many">%1$d з %2$d днів</item>
+    <item quantity="other">%1$d з %2$d днів</item>
+  </plurals>
+  <string name="reading_challenge_not_read_today_description">Не проходьте повз, збережіть свою серію.</string>
+  <string name="reading_challenge_streak_ongoing_title">25-денний читацький виклик</string>
+  <string name="reading_challenge_widget_reminder_dont_let_today_drift">Не проходьте повз, ваша читацька серія чекає.</string>
+  <string name="reading_challenge_widget_reminder_before_day_snoozes">Перш ніж день задрімає… ще є час чогось навчитися.</string>
+  <string name="reading_challenge_widget_reminder_small_bit_counts">Навіть невелика кількість прочитаного зараховується для досягнення вашої мети.</string>
+  <string name="reading_challenge_widget_reminder_one_article_away">Ваша серія всього за одну статтю від вас.</string>
+  <string name="reading_challenge_widget_reminder_jump_in_anytime">Заходьте почитати будь-коли сьогодні.</string>
+  <string name="reading_challenge_widget_reminder_quiet_reading_moment">Тиха хвилинка читання?</string>
+  <string name="reading_challenge_widget_reminder_keep_curiosity_going">Підгодовуйте свою цікавість.</string>
+  <string name="reading_challenge_widget_enrolled_not_started_title">На старт, увага, читайте!</string>
+  <string name="reading_challenge_widget_enrolled_not_started_subtitle">Почніть працювати над 25-денною серією!</string>
+  <string name="reading_challenge_widget_start_reading_challenge_title">Розпочніть свій читацький виклик.</string>
+  <string name="reading_challenge_widget_start_reading_challenge_subtitle">Кожна серія десь починається</string>
+  <string name="reading_challenge_widget_start_spin_up_new_streak_title">Розпочати нову серію?</string>
+  <string name="reading_challenge_widget_start_spin_up_new_streak_subtitle">Для початку прочитайте одну статтю.</string>
+  <string name="reading_challenge_widget_start_fresh_start_title">Новий початок.</string>
+  <string name="reading_challenge_widget_start_fresh_start_subtitle">Ваша серія всього за одну статтю від вас.</string>
+  <string name="reading_challenge_widget_concluded_incomplete">Виклик завершено</string>
+  <string name="reading_challenge_widget_concluded_complete">Ви це зробили!</string>
+  <string name="reading_challenge_widget_reward_title">Допитливість вам пасує! 🛍️</string>
+  <string name="reading_challenge_widget_reward_body">Відсвяткуйте виконання завдання зі знижкою 15%% у магазині Вікіпедії.</string>
+  <string name="reading_challenge_widget_reward_button_label">Отримайте знижку 15%% у магазині</string>
 </resources>

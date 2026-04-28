@@ -13,26 +13,31 @@ import org.wikipedia.util.ReleaseUtil
 import java.time.LocalDate
 
 object DonationReminderHelper {
-    const val CAMPAIGN_ID = "appmenu_reminder"
     const val MAX_REMINDER_PROMPTS = 2
-    private val validReadCountOnSeconds = if (ReleaseUtil.isDevRelease) 1 else 15
+    private val validReadCountOnSeconds = if (ReleaseUtil.isDevRelease) 1 else 5
 
     private val isTestGroupUser = DonationReminderAbTest().isTestGroupUser()
     private val enabledCountries = listOf(
         "GB", "AU", "CA"
     )
-    private val isInEligibleCountry get() = ReleaseUtil.isDevRelease || enabledCountries.contains(GeoUtil.geoIPCountry.orEmpty())
-
+    private val isInDateRange get() = LocalDate.now() <= LocalDate.of(2026, 3, 15)
+    val isInEligibleCountry get() = ReleaseUtil.isDevRelease || enabledCountries.contains(GeoUtil.geoIPCountry.orEmpty())
     val defaultReadFrequencyOptions = listOf(5, 10, 15, 25, 50)
 
-    // TODO: remove the feature flag before Dec 1 2025.
     val isEnabled
-        get() = ReleaseUtil.isDevRelease || !ReleaseUtil.isProdRelease && isInEligibleCountry &&
-                        LocalDate.now() <= LocalDate.of(2026, 3, 15) && isTestGroupUser
+        get() = (ReleaseUtil.isDevRelease || isInEligibleCountry && isInDateRange) && isTestGroupUser
 
     val hasActiveReminder get() = Prefs.donationReminderConfig.userEnabled && Prefs.donationReminderConfig.isReminderReady && isInEligibleCountry
 
     var shouldShowSettingSnackbar = false
+
+    fun getCampaignId(campaignIdOriginal: String = "appmenu"): String {
+        return if (isInEligibleCountry && isInDateRange) {
+            campaignIdOriginal + if (isTestGroupUser) "_reminderB" else "_reminderA"
+        } else {
+            campaignIdOriginal
+        }
+    }
 
     fun thankYouMessageForSettings(): String {
         val context = WikipediaApp.instance
